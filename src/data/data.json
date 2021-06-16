@@ -1,0 +1,20 @@
+[
+    {
+        "artist": "Belle Foreman",
+        "email": "belle@gmail.com",
+        "link": "www.facebook.com",
+        "profileImage": "/src/images/profile-photos/IMG_9523.jpeg"
+    },
+    {
+        "artist": "Ellie Foreman",
+        "email": "belle@gmail.com",
+        "link": "www.facebook.com",
+        "profileImage": "/src/images/profile-photos/IMG_9535.jpeg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "link": "www.facebook.com",
+        "profileImage": "/src/images/profile-photos/IMG_9545.jpeg"
+    }
+]
