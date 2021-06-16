@@ -1,23 +1,49 @@
-import React from "react"
-import JSONData from "../data/data.json"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import get from 'lodash/get'
+
+class ProductPage extends React.Component {
+  render() {
+
+    const products = get(this, 'props.data.allDataJson.edges')
+    console.log(products)
+
+    return (
+      <Layout>
+        {products.map(({ node }) => {
+          return (
+            <div key={node.artist}>
+              <p>{node.artist}</p>
+              <img src={node.profileImage.childImageSharp.fluid.src} />
+            </div>
+          )
+        })}
+      </Layout>
+    )
+  }
+}
+
+export default ProductPage
 
 
-
-console.log('JSONData', JSONData)
-
-const JSONbuildtime = () => (
-    <div style={{ maxWidth: `960px`, margin: `1.45rem` }}>
-        <h1>hello</h1>
-        <h1>{JSONData[0].artist}</h1>
-        {/* <img src={node.image.childImageSharp.fluid.src} /> */}
-
-        <ul>
-            {JSONData.map((data, index) => {
-                return <li key={`content_item_${index}`}>{data.profileImage}</li>
-                // return <StaticImage src={data.profileImage} alt="A dinosaur" placeholder="blurred" layout="fixed" width={200} height={200}/>
-            })}
-        </ul>
-    </div>
-)
-export default JSONbuildtime
+export const productsQuery = graphql`
+  query {
+    allDataJson {
+      edges {
+        node {
+          artist
+          email
+          link
+          profileImage {
+            childImageSharp {
+              fluid(maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

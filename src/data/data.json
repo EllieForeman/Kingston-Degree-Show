@@ -3,18 +3,21 @@
         "artist": "Belle Foreman",
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
-        "profileImage": "/src/images/profile-photos/IMG_9523.jpeg"
+        "profileImage": "../images/IMG_9523.jpeg",
+        "extension": "jpeg"
     },
     {
         "artist": "Ellie Foreman",
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
-        "profileImage": "/src/images/profile-photos/IMG_9535.jpeg"
+        "profileImage": "../images/IMG_9535.jpeg",
+        "extension": "jpeg"
     },
     {
         "artist": "Eria Foreman",
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
-        "profileImage": "/src/images/profile-photos/IMG_9545.jpeg"
+        "profileImage": "../images/IMG_9545.jpeg",
+        "extension": "jpeg"
     }
 ]
