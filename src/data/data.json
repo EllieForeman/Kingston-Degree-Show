@@ -4,6 +4,7 @@
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
         "profileImage": "../images/IMG_9523.jpeg",
+        "alt": "example alt text",
         "extension": "jpeg"
     },
     {
@@ -11,6 +12,7 @@
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
         "profileImage": "../images/IMG_9535.jpeg",
+        "alt": "example alt text",
         "extension": "jpeg"
     },
     {
@@ -18,6 +20,7 @@
         "email": "belle@gmail.com",
         "link": "www.facebook.com",
         "profileImage": "../images/IMG_9545.jpeg",
+        "alt": "example alt text",
         "extension": "jpeg"
     }
 ]
