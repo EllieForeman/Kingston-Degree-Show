@@ -28,9 +28,9 @@ class ProductPage extends React.Component {
                                     <div className="text">
                                         <p>{node.artist}</p>
                                         <div className="socialIcons">
-                                            {node.instagram && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="instagram link" className="socialIcon" icon={faInstagram} /></a>}
-                                            {node.website && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="website link" className="socialIcon" icon={faUserAstronaut} /></a>}
-                                            {node.email && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="email link" className="socialIcon" icon={faEnvelope} /></a>}
+                                            {node.instagram && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="instagram link" className="socialIcon" icon={faInstagram} /></a>}
+                                            {node.website && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="website link" className="socialIcon" icon={faUserAstronaut} /></a>}
+                                            {node.email && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="email link" className="socialIcon" icon={faEnvelope} /></a>}
                                         </div>
                                     </div>
                                 </div>

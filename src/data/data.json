@@ -4,23 +4,85 @@
         "email": "belle@gmail.com",
         "website": "www.facebook.com",
         "instagram": "https://www.instagram.com/belleforeman/",
-        "profileImage": "../images/IMG_9523.jpeg",
+        "profileImage": "../images/profile-photos/test1.jpg",
         "alt": "example alt text",
-        "extension": "jpeg"
+        "extension": "jpg"
     },
     {
         "artist": "Ellie Foreman",
         "email": "belle@gmail.com",
         "website": "www.facebook.com",
-        "profileImage": "../images/IMG_9535.jpeg",
+        "profileImage": "../images/profile-photos/test2.jpg",
         "alt": "example alt text",
-        "extension": "jpeg"
+        "extension": "jpg"
     },
     {
         "artist": "Eria Foreman",
         "email": "belle@gmail.com",
-        "profileImage": "../images/IMG_9545.jpeg",
+        "profileImage": "../images/profile-photos/test3.jpg",
         "alt": "example alt text",
-        "extension": "jpeg"
+        "extension": "jpg"
+    },    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test4.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test5.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test6.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test7.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test8.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test9.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test10.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test11.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
+    },
+    {
+        "artist": "Eria Foreman",
+        "email": "belle@gmail.com",
+        "profileImage": "../images/profile-photos/test13.jpg",
+        "alt": "example alt text",
+        "extension": "jpg"
     }
 ]

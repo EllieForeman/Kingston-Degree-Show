@@ -1,12 +1,14 @@
 
 .outerDiv {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-container {
-	position: relative;
-	display: flex;
-    margin: 10px
+	flex: 1 0 30%; /* explanation below */
+	margin: 5px;
+    margin: 10px;
+	min-width: 200px;
 }
 
 .img1-wrap {
@@ -24,8 +26,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #008CBA;
-    opacity: 0.8;
+	background-color: rgba(238,206,23, 0.8);
 	overflow: hidden;
     transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
@@ -38,7 +39,7 @@
 
 .text {
 	white-space: nowrap; 
-	color: white;
+	color: #444444;
 	font-size: 20px;
 	position: absolute;
 	overflow: hidden;
@@ -58,11 +59,11 @@
 }
 
 a {
-	color: white;
+	color: #444444;
 }
 
 a:hover {
-	color: pink;
+	color: #0355B0;
 }
 
 .socialIcons {
