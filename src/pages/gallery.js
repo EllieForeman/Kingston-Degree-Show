@@ -5,21 +5,40 @@ import get from 'lodash/get'
 import "./gallery.css"
 
 class ProductPage extends React.Component {
-  render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+          isHovered: false
+        };
+        this.handleImageHover = this.handleImageHover.bind(this);
+    }
 
+    handleImageHover() {
+        console.log("inside")
+        this.setState({
+          isHovered: !this.state.isHovered
+        });
+    }
+
+  render() {
+    const menuActive = this.state.isHovered ? "active" : "";
+    console.log('menu', menuActive)
     const products = get(this, 'props.data.allDataJson.edges')
     console.log(products)
 
     return (
       <Layout>
         <div className="outerDiv">
-            {products.map(({ node }) => {
+            {products.map(({ node }, index) => {
                 return (
-                    <div key={node.artist}>
-                    {/* <p>{node.artist}</p> */}
-                    <img class="profileImage"
-                    src={node.profileImage.childImageSharp.fluid.src}
-                    alt={node.alt}/>
+                    <div className={`image${index} innerDiv`} onMouseEnter={this.handleImageHover} onMouseLeave={this.handleImageHover}>    
+                        <div id="imgOverlayColour">
+                        <p className={(menuActive === "active" ? 'overlayText' : 'displayNone')}>{node.artist}</p>
+                        <img
+                        className={menuActive}
+                        src={node.profileImage.childImageSharp.fluid.src}
+                        alt={node.alt}/>
+                        </div>
                     </div>
                 )
             })}

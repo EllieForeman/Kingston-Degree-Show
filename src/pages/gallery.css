@@ -1,6 +1,39 @@
-.profileImage {
-    width: 90%
+.innerDiv {
+    margin: 10px; 
 }
+
 .outerDiv {
     display: flex;
+}
+
+#imgOverlayColour {
+    z-index: 1;
+    background: rgba(255,153,51,0.4);
+    box-sizing:border-box;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+img.active {
+    opacity: 0.3;
+}
+
+/* .active {
+    display:block
+} */
+
+.overlayText {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.displayNone {
+    display: none;
 }
