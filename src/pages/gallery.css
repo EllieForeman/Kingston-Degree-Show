@@ -6,8 +6,7 @@
 
 .flex-container {
 	flex: 1 0 30%; /* explanation below */
-	margin: 5px;
-    margin: 10px;
+    margin: 12px;
 	min-width: 200px;
 }
 
@@ -26,11 +25,12 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(238,206,23, 0.8);
+	/* background-color: rgba(238,206,23, 0.8); */
 	overflow: hidden;
     transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
     -webkit-transition: opacity 2s ease-in-out;
+	backdrop-filter: blur(9px);
 }
 
 .img1-wrap:hover .overlay {
@@ -59,11 +59,11 @@
 }
 
 a {
-	color: #444444;
+	color: black;
 }
 
 a:hover {
-	color: #0355B0;
+	color: #F9F3eF;
 }
 
 .socialIcons {

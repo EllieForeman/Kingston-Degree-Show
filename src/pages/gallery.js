@@ -64,6 +64,7 @@ export const productsQuery = graphql`
             }
           }
           alt
+          tag
         }
       }
     }
