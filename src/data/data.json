@@ -2,7 +2,8 @@
     {
         "artist": "Belle Foreman",
         "email": "belle@gmail.com",
-        "link": "www.facebook.com",
+        "website": "www.facebook.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/IMG_9523.jpeg",
         "alt": "example alt text",
         "extension": "jpeg"
@@ -10,7 +11,7 @@
     {
         "artist": "Ellie Foreman",
         "email": "belle@gmail.com",
-        "link": "www.facebook.com",
+        "website": "www.facebook.com",
         "profileImage": "../images/IMG_9535.jpeg",
         "alt": "example alt text",
         "extension": "jpeg"
@@ -18,7 +19,6 @@
     {
         "artist": "Eria Foreman",
         "email": "belle@gmail.com",
-        "link": "www.facebook.com",
         "profileImage": "../images/IMG_9545.jpeg",
         "alt": "example alt text",
         "extension": "jpeg"

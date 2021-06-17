@@ -1,39 +1,71 @@
-.innerDiv {
-    margin: 10px; 
-}
 
 .outerDiv {
     display: flex;
 }
 
-#imgOverlayColour {
-    z-index: 1;
-    background: rgba(255,153,51,0.4);
-    box-sizing:border-box;
-    position: relative;
+.flex-container {
+	position: relative;
+	display: flex;
+    margin: 10px
 }
 
-img {
-    width: 100%;
-    vertical-align: middle;
+.img1-wrap {
+	position: relative;
+	overflow: hidden;
 }
 
-img.active {
-    opacity: 0.3;
+.image {
+	width: 100%;
 }
 
-/* .active {
-    display:block
-} */
+.overlay {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+    opacity: 0.8;
+	overflow: hidden;
+    transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
+}
 
-.overlayText {
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
+.img1-wrap:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.socialIcon {
+	height: 20px;
+	margin: 5px
 }
 
 .displayNone {
-    display: none;
+	display: none
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: pink;
+}
+
+.socialIcons {
+	display: flex;
+	justify-content: space-around
 }

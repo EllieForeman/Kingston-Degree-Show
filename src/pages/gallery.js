@@ -3,49 +3,45 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import get from 'lodash/get'
 import "./gallery.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
+
+
 
 class ProductPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          isHovered: false
-        };
-        this.handleImageHover = this.handleImageHover.bind(this);
-    }
+    
+    render() {
+        const products = get(this, 'props.data.allDataJson.edges')
+        console.log(products)
 
-    handleImageHover() {
-        console.log("inside")
-        this.setState({
-          isHovered: !this.state.isHovered
-        });
-    }
-
-  render() {
-    const menuActive = this.state.isHovered ? "active" : "";
-    console.log('menu', menuActive)
-    const products = get(this, 'props.data.allDataJson.edges')
-    console.log(products)
-
-    return (
-      <Layout>
-        <div className="outerDiv">
-            {products.map(({ node }, index) => {
-                return (
-                    <div className={`image${index} innerDiv`} onMouseEnter={this.handleImageHover} onMouseLeave={this.handleImageHover}>    
-                        <div id="imgOverlayColour">
-                        <p className={(menuActive === "active" ? 'overlayText' : 'displayNone')}>{node.artist}</p>
-                        <img
-                        className={menuActive}
-                        src={node.profileImage.childImageSharp.fluid.src}
-                        alt={node.alt}/>
+        return (
+        <Layout>
+            <div className="outerDiv">
+                {products.map(({ node }, index) => {
+                    console.log('insta', node.instagram)
+                    return (
+                        <div key={index} className={`image${index} flex-container`}>
+                            <div className="img1-wrap">
+                                <img src={node.profileImage.childImageSharp.fluid.src} alt={node.alt} className="image"/>
+                                <div className="overlay">
+                                    <div className="text">
+                                        <p>{node.artist}</p>
+                                        <div className="socialIcons">
+                                            {node.instagram && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="instagram link" className="socialIcon" icon={faInstagram} /></a>}
+                                            {node.website && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="website link" className="socialIcon" icon={faUserAstronaut} /></a>}
+                                            {node.email && <a href="https://twitter.com/gatsbyjs"><FontAwesomeIcon aria-label="email link" className="socialIcon" icon={faEnvelope} /></a>}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                )
-            })}
-        </div>
-      </Layout>
-    )
-  }
+                    )
+                })}
+            </div>
+        </Layout>
+        )
+    }
 }
 
 export default ProductPage
@@ -58,7 +54,8 @@ export const productsQuery = graphql`
         node {
           artist
           email
-          link
+          website
+          instagram
           profileImage {
             childImageSharp {
               fluid(maxWidth: 1000, quality: 100) {
