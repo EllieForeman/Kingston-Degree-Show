@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Apercu';
+  src: local('Apercu'), url(../styles/fonts/ApercuProRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Abril';
+  src: local('Abril'), url(../styles/fonts/Abril_Display_Bold.otf) format('truetype');
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

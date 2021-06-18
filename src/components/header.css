@@ -19,7 +19,11 @@
     color: #167034;
     margin: 10px;
     margin-left: 15px;
+    letter-spacing: 0.5px;
+}
 
+.TopNav {
+    padding-bottom: 15px;
 }
 
 .navLinkSection {
@@ -29,17 +33,21 @@
 .active {
     font-size: 25px;
     text-decoration: none;
-    color: palevioletred;
     margin: 10px;
+    padding-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
 }
 
 ul {
     list-style-type: none;
-    border-left: 13px #15b34a solid;
+    border-left: 7px #15b34a solid;
 }
 
 li{
     cursor: pointer;
+    font-family: Abril, serif;
 }
 
 /* li:second-child {
@@ -49,16 +57,32 @@ li{
 .tagFilter {
     color: #15b34a;
     font-style: italic;
-    margin-left: 10px;
-
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-family: Abril, serif;
+    font-weight: 200;
 }
 
 .tagFilter:hover {
     color: palevioletred;
     font-style: italic;
-    margin-left: 10px;
+    margin-left: 25px;
 }
+
+.tagFilter:hover .icon {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+ }
 
 .tagActive {
     color: palevioletred;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #15b34a;
 }
