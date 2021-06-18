@@ -91,3 +91,22 @@ button {
     border: none;
     color: #15b34a;
 }
+
+
+/* FOR MOBILE */
+
+.headerMobile {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerDesktop {
+        display: none;
+    }
+    .flex {
+        display: block;
+    }
+    .bodyLayout {
+        margin-left: 0px;
+    }
+}
