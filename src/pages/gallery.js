@@ -16,21 +16,19 @@ class ProductPage extends React.Component {
         super(props);
         this.state = {
             tag: "all",
-            products: get(this, 'props.data.allDataJson.edges')
+            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)
         }
         this.handleClick = this.filter.bind(this);
     }
-    
     filter(tag) {
         if (tag === "all") {
             console.log("button clicked", tag)
-            this.setState({products: get(this, 'props.data.allDataJson.edges')})
+            this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
         } else {
-            this.setState({products: 
-                get(this, 'props.data.allDataJson.edges').filter(obj => {
-                    return obj.node.tag.includes(tag)
-                })
+            let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
+                return obj.node.tag.includes(tag)
             })
+            this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
         };
         this.setState({ tag: tag });
     }        
@@ -38,7 +36,6 @@ class ProductPage extends React.Component {
 
 
     render() {
-
         const products = this.state.products
         console.log(products)
         console.log('tag', this.state.tag === "all")
