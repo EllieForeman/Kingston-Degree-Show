@@ -1,15 +1,14 @@
+
 .header {
-    margin: 0 auto;
-    width: 260px;
-    height: 100%;
     position: fixed;
-    top: 20px;
-    padding-left: 30px
+    width: 240px;
+    left: 0;
+    margin-left: 30px;
 }
 
 .logoImage {
-    float:right;
-    clear:right;
+    /* float:right;
+    clear:right; */
     padding: 15px;
     margin-bottom: 40px;
 }
@@ -19,8 +18,12 @@
     text-decoration: none;
     color: #167034;
     margin: 10px;
-    margin-left: 55px;
+    margin-left: 15px;
 
+}
+
+.navLinkSection {
+    margin-top: 30px;
 }
 
 .active {
@@ -28,26 +31,34 @@
     text-decoration: none;
     color: palevioletred;
     margin: 10px;
-    margin-left: 55px;
 }
 
 ul {
     list-style-type: none;
+    border-left: 13px #15b34a solid;
 }
 
-li {
+li{
+    cursor: pointer;
+}
+
+/* li:second-child {
     padding-top: 20px
+} */
+
+.tagFilter {
+    color: #15b34a;
+    font-style: italic;
+    margin-left: 10px;
+
 }
 
-.line {
-    height: 200px;
-    width: 13px;
-    background-color: #15b34a;
-    position: fixed;
-    top: 308px;
-    left: 66px;
+.tagFilter:hover {
+    color: palevioletred;
+    font-style: italic;
+    margin-left: 10px;
 }
 
-.navLinkSection {
-    padding-top: 300px;
+.tagActive {
+    color: palevioletred;
 }

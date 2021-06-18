@@ -2,6 +2,12 @@
 .outerDiv {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 50px;
+
+}
+
+.flex {
+	display: flex;
 }
 
 .flex-container {
@@ -70,3 +76,10 @@ a:hover {
 	display: flex;
 	justify-content: space-around
 }
+
+.tags {
+	position: fixed;
+	left: 20px;
+	top: 450px;
+}
+
