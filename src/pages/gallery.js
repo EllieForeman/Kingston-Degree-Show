@@ -54,7 +54,7 @@ class ProductPage extends React.Component {
                 </Link>
                 <div class="navLinkSection">
                     <ul>
-                        <li className="TopNav"><Link to="/gallery" className="menuLink active">catalogue</Link></li>
+                        <li className="TopNav"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
                         <li className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("all")}><StaticImage className="icon" src="../images/shapes/grain-3.png" width={40} alt="Logo" placeholder="tracedSVG"/>all</button></li>
                         <li className={this.state.tag === "moving image" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("moving image")}><StaticImage className="icon" src="../images/shapes/moving-image.png" width={40} alt="Logo" placeholder="tracedSVG"/>moving image</button></li>
                         <li className={this.state.tag === "illustration" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("illustration")}><StaticImage className="icon" src="../images/shapes/illustration.png" width={40} alt="Logo" placeholder="tracedSVG"/>illustration</button></li>
