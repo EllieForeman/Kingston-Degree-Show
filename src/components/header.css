@@ -84,6 +84,7 @@ li{
 
 .tagActive {
     color: palevioletred;
+    
 }
 
 button {
@@ -99,6 +100,25 @@ button {
     width: 100%;
 }
 
+.paddingTop{
+	padding-top: 20px;;
+}
+
+.filterBy {
+    font-size: 15px;
+    color: #167034;
+    margin: 10px;
+    letter-spacing: 0.5px;
+    width: 50%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .headerMobile {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .headerDesktop {
         display: none;
@@ -109,4 +129,34 @@ button {
     .bodyLayout {
         margin-left: 0px;
     }
+    .menuLink {
+        font-size: 22px;
+    }
+    .tagFilter {
+        margin-bottom: 6px;
+        flex-shrink: 3;
+                width: 50%;
+        margin: 0;
+        text-align: left;
+    }
+    .tagFilter:hover {
+        color: palevioletred;
+        font-style: italic;
+        margin-left: 0;
+    }
+    .tagFilter:hover ~ .icon {
+        overflow: hidden;
+        transition-duration: 0.8s;
+        transition-property: transform;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    .outerDiv {
+        margin-top: 20px;
+    }
+    .bodyLayout {
+        max-width: 100%;
+    }
+    
 }
+

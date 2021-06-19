@@ -3,7 +3,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 50px;
-
 }
 
 .flex {
@@ -83,3 +82,15 @@ a:hover {
 	top: 450px;
 }
 
+.flexCenter {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexCenterReverse {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: row-reverse
+}

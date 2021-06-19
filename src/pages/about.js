@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const AboutPage = () => (
     <Layout>
         <div className="flex">
-            <header className="header">
+            <header className="header headerDesktop">
                 <Link to="/" className="logoImage">
                     <StaticImage src="../images/logo-with-text.png"
                     alt="Logo"
@@ -19,16 +19,28 @@ const AboutPage = () => (
                 <div class="navLinkSection">
                     <ul>
                         <li className="TopNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
-                        <li><Link to="/about" className="menuLink active">about</Link></li>
+                        <li><Link to="#" className="menuLink active">about</Link></li>
                     </ul>
                 </div>
-        </header>
-        <div className="outerDiv">
-            <h1>About</h1>
-        </div>
-
-
-
+            </header>
+            <header className="headerMobile">
+                <Link to="/" className="logoImageMobile flexCenter">
+                        <StaticImage src="../images/logo-with-text.png"
+                        alt="Logo"
+                        placeholder="tracedSVG"
+                        layout="fixed"
+                        width={150}
+                        height={150}
+                        />
+                </Link>
+                <div className="flexCenter paddingTop">
+                    <Link to="/gallery" className="menuLink">catalogue</Link>
+                    <Link to="#" className="menuLink active">about</Link>
+                </div>
+            </header>
+            <div className="outerDiv">
+                <h1>About</h1>
+            </div>
         </div>
     </Layout>
 )
