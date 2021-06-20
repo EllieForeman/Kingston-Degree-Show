@@ -6,7 +6,7 @@
         "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test1.jpg",
         "alt": "example alt text",
-        "extension": "jpg",
+        "extension": "gifExample",
         "tag": "documentary"
     },
     {
@@ -19,14 +19,14 @@
         "tag": "illustration"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test3.jpg",
         "alt": "example alt text",
         "extension": "jpg",
         "tag": "illustration"
     },    {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test4.jpg",
         "alt": "example alt text",
@@ -34,7 +34,7 @@
         "tag": "documentary"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test5.jpg",
         "alt": "example alt text",
@@ -42,7 +42,7 @@
         "tag": "children's book"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test6.jpg",
         "alt": "example alt text",
@@ -50,7 +50,7 @@
         "tag": "illustration"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test7.jpg",
         "alt": "example alt text",
@@ -58,7 +58,7 @@
         "tag": "illustration"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test8.jpg",
         "alt": "example alt text",
@@ -66,7 +66,7 @@
         "tag": "animation"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test9.jpg",
         "alt": "example alt text",
@@ -74,7 +74,7 @@
         "tag": "illustration"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test10.jpg",
         "alt": "example alt text",
@@ -82,7 +82,7 @@
         "tag": "etc"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test11.jpg",
         "alt": "example alt text",
@@ -90,7 +90,7 @@
         "tag": "children's books"
     },
     {
-        "artist": "Eria Foreman",
+        "artist": "Eira Foreman",
         "email": "belle@gmail.com",
         "profileImage": "../images/profile-photos/test13.jpg",
         "alt": "example alt text",

@@ -9,6 +9,7 @@ import { faEnvelope, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../components/header.css'
+import gifExample from '../images/profile-photos/testgif1.gif'
 
 
 class ProductPage extends React.Component {
@@ -42,6 +43,7 @@ class ProductPage extends React.Component {
         return (
         <Layout>
             <div className="flex">
+            {/* DESKTOP HEADER */}
             <header className="header headerDesktop">
                 <Link to="/" className="logoImage">
                     <StaticImage src="../images/logo-with-text.png"
@@ -66,7 +68,7 @@ class ProductPage extends React.Component {
                     </ul>
                 </div>
             </header>
-
+            {/* MOBILE HEADER */}
             <header className="headerMobile">
                 <Link to="/" className="logoImageMobile flexCenter">
                         <StaticImage src="../images/logo-with-text.png"
@@ -113,14 +115,18 @@ class ProductPage extends React.Component {
                     </div>
                 </div>
             </header>
-
+            {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
 
                 {products.map(({ node }, index) => {
+                    console.log('extension', typeof(node.extension))
                     return (
                         <div key={index} className={`image${index} flex-container ${node.tag}`}>
                             <div className="img1-wrap">
-                                <img src={node.profileImage.childImageSharp.fluid.src} alt={node.alt} className="image"/>
+                                {node.extension.includes("gif")
+                                    ? <img src={gifExample} alt={node.alt} />
+                                    : <img src={node.profileImage.childImageSharp.fluid.src} alt={node.alt} className="image"/>
+                                }
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist}</p>
@@ -163,6 +169,7 @@ export const productsQuery = graphql`
           }
           alt
           tag
+          extension
         }
       }
     }

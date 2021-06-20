@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       <div className="bodyLayout"
         style={{
           marginTop:`50px`,
-          maxWidth: `95%`,
+          maxWidth: `100%`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

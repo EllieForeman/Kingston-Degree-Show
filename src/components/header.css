@@ -151,9 +151,6 @@ button {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
     }
-    .outerDiv {
-        margin-top: 20px;
-    }
     .bodyLayout {
         max-width: 100%;
     }
