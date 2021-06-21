@@ -23,7 +23,6 @@ class ProductPage extends React.Component {
     }
     filter(tag) {
         if (tag === "all") {
-            console.log("button clicked", tag)
             this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
         } else {
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
@@ -38,8 +37,6 @@ class ProductPage extends React.Component {
 
     render() {
         const products = this.state.products
-        console.log(products)
-        console.log('tag', this.state.tag === "all")
         return (
         <Layout>
             <div className="flex">
