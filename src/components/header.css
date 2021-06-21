@@ -23,7 +23,7 @@
 }
 
 .menuLink:hover {
-    color: #15b34a;
+    color: #93ab42;
 }
 
 .TopNav {
@@ -47,7 +47,7 @@
 
 ul {
     list-style-type: none;
-    border-left: 7px #15b34a solid;
+    /* border-left: 7px #93ab42 solid; */
 }
 
 li{
@@ -60,7 +60,7 @@ li{
 } */
 
 .tagFilter {
-    color: #15b34a;
+    color: #93ab42;
     font-style: italic;
     margin-left: 25px;
     margin-bottom: 10px;
@@ -90,7 +90,7 @@ li{
 button {
     background-color: transparent;
     border: none;
-    color: #15b34a;
+    color: #93ab42;
 }
 
 

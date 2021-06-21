@@ -8,12 +8,11 @@ import '../pages/index.css'
 
 
 const IndexPage = () => (
-  <section className="splashLayout">
-    <Seo title="Home" />
-    <img className="splashGif" src={splashGif} alt="Otter dancing with a fish" />
-
-      <Link className="enterButton" to="/gallery/">enter</Link> <br />
-  </section>
+    <section className="splashLayout">
+        <Seo title="Home" />
+        <img className="splashGif" src={splashGif} alt="Otter dancing with a fish" />
+        <Link className="enterButton" to="/gallery/">enter</Link> <br />
+    </section>
 )
 
 export default IndexPage
