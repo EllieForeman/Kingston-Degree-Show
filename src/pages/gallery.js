@@ -116,7 +116,7 @@ class ProductPage extends React.Component {
             <div className="outerDiv">
 
                 {products.map(({ node }, index) => {
-                    console.log('extension', typeof(node.extension))
+                    console.log('extension', node)
                     return (
                         <div key={index} className={`image${index} flex-container ${node.tag}`}>
                             <div className="img1-wrap">
