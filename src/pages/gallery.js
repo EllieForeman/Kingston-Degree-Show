@@ -130,16 +130,10 @@ class ProductPage extends React.Component {
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist} <FaInstagram /></p>
-                                        <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
-                                        <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer">Instagram</a>
-
                                         <div className="socialIcons">
-                                            <FaInstagram />
-                                            <CgProfile />
-                                            <HiOutlineMailOpen />
-                                            {/* <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram aria-label="instagram link" className=""/></a>
-                                            <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile aria-label="website link" className="" /></a>
-                                            <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen aria-label="email link" className="" /></a> */}
+                                            <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
+                                            <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>
+                                            <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen /></a></p>
                                         </div>
                                     </div>
                                 </div>
