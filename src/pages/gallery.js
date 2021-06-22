@@ -130,6 +130,8 @@ class ProductPage extends React.Component {
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist} <FaInstagram /></p>
+                                        <FaInstagram />
+
                                         <div className="socialIcons">
                                             <FaInstagram />
                                             <CgProfile />
