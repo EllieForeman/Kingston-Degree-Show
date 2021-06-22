@@ -130,7 +130,7 @@ class ProductPage extends React.Component {
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist} <FaInstagram /></p>
-                                        <p><FaInstagram /></p>
+                                        <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
 
                                         <div className="socialIcons">
                                             <FaInstagram />
