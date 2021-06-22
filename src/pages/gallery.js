@@ -117,7 +117,7 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-            <h3> Lets go for a <FaBeer />? </h3>
+            <h3> Lets go for a <FaInstagram />? </h3>
                 {products.map(({ node }, index) => {
                     console.log('extension', node)
                     return (
