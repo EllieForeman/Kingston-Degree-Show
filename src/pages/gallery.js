@@ -130,7 +130,7 @@ class ProductPage extends React.Component {
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist}</p>
-                                        <div>
+                                        <div className="flex">
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen /></a></p>
