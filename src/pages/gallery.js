@@ -56,6 +56,7 @@ class ProductPage extends React.Component {
                 </Link>
                 <div class="navLinkSection">
                     <ul>
+                        <li><Link to="/about" className="menuLink">about</Link></li>
                         <li className="TopNav"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
                         <li className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("all")}><StaticImage className="icon" src="../images/shapes/grain-3.png" width={40} alt="Logo" placeholder="tracedSVG"/>all</button></li>
                         <li className={this.state.tag === "moving image" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("moving image")}><StaticImage className="icon" src="../images/shapes/moving-image.png" width={40} alt="Logo" placeholder="tracedSVG"/>moving image</button></li>
@@ -64,7 +65,6 @@ class ProductPage extends React.Component {
                         <li className={this.state.tag === "children's books" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("children's books")}><StaticImage className="icon" src="../images/shapes/childrens-book.png" width={40} alt="Logo" placeholder="tracedSVG"/>children's books</button></li>
                         <li className={this.state.tag === "documentary" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("documentary")}><StaticImage className="icon" src="../images/shapes/documentary.png" width={40} alt="Logo" placeholder="tracedSVG"/>documentary</button></li>
                         <li className={this.state.tag === "etc" ? "tagActive tagFilter TopNav" : "tagFilter TopNav"}><button onClick={() => this.filter("etc")}><StaticImage className="icon" src="../images/shapes/etc.png" width={40} alt="Logo" placeholder="tracedSVG"/>etc</button></li>
-                        <li><Link to="/about" className="menuLink">about</Link></li>
                     </ul>
                 </div>
             </header>
@@ -75,8 +75,8 @@ class ProductPage extends React.Component {
                         alt="Logo"
                         placeholder="tracedSVG"
                         layout="fixed"
-                        width={150}
-                        height={150}
+                        width={120}
+                        height={120}
                         />
                 </Link>
                 <div className="flexCenter paddingTop">
@@ -117,7 +117,6 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-            <h3> Lets go for next <FaInstagram />? </h3>
                 {products.map(({ node }, index) => {
                     console.log('extension', node)
                     return (
@@ -130,7 +129,7 @@ class ProductPage extends React.Component {
                                 <div className="overlay">
                                     <div className="text">
                                         <p>{node.artist}</p>
-                                        <div className="flex">
+                                        <div className="flexAround">
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>
                                         <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen /></a></p>

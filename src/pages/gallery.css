@@ -2,17 +2,20 @@
 .outerDiv {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 50px;
 }
 
 .flex {
+	display: flex;
+}
+
+.flexAround {
 	display: flex;
 	justify-content: space-around;
 }
 
 .flex-container {
 	flex: 1 0 30%; /* explanation below */
-    margin: 12px;
+    margin: 6px;
 	min-width: 200px;
 }
 

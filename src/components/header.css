@@ -1,29 +1,22 @@
 
 .header {
     position: fixed;
-    width: 240px;
+    width: 200px;
     left: 0;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
-.logoImage {
-    /* float:right;
-    clear:right; */
-    padding: 15px;
-    margin-bottom: 40px;
-}
 
 .menuLink {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #167034;
     margin: 10px;
-    margin-left: 15px;
     letter-spacing: 0.5px;
 }
 
 .menuLink:hover {
-    color: #93ab42;
+    color: palevioletred;
 }
 
 .TopNav {
@@ -34,11 +27,14 @@
     margin-top: 30px;
 }
 
+button {
+    padding: 0;
+}
+
 .active {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     margin: 10px;
-    margin-left: 15px;
     padding-bottom: 1px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
@@ -60,18 +56,14 @@ li{
 } */
 
 .tagFilter {
-    color: #93ab42;
-    font-style: italic;
-    margin-left: 25px;
-    margin-bottom: 10px;
+    /* font-style: italic; */
+    margin-bottom: 6px;
     font-family: Abril, serif;
     font-weight: 200;
 }
 
-.tagFilter:hover {
+li button:hover {
     color: palevioletred;
-    font-style: italic;
-    margin-left: 25px;
 }
 
 .tagFilter:hover .icon {
@@ -90,7 +82,7 @@ li{
 button {
     background-color: transparent;
     border: none;
-    color: #93ab42;
+    color: #167034;
 }
 
 
@@ -129,9 +121,6 @@ button {
     .bodyLayout {
         margin-left: 0px;
     }
-    .menuLink {
-        font-size: 22px;
-    }
     .tagFilter {
         margin-bottom: 6px;
         flex-shrink: 3;
@@ -141,7 +130,6 @@ button {
     }
     .tagFilter:hover {
         color: palevioletred;
-        font-style: italic;
         margin-left: 0;
     }
     .tagFilter:hover ~ .icon {

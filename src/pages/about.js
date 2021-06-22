@@ -19,8 +19,8 @@ const AboutPage = () => (
                 </Link>
                 <div class="navLinkSection">
                     <ul>
-                        <li className="TopNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
                         <li><Link to="#" className="menuLink active">about</Link></li>
+                        <li className="TopNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
                     </ul>
                 </div>
             </header>
