@@ -11,6 +11,7 @@ import gifExample from '../images/profile-photos/testgif1.gif'
 import { FaInstagram } from 'react-icons/fa';
 import { CgProfile } from 'react-icons/cg';
 import { HiOutlineMailOpen } from 'react-icons/hi';
+import { FaBeer } from 'react-icons/fa';
 
 
 
@@ -116,7 +117,7 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-
+            <h3> Lets go for a <FaBeer />? </h3>
                 {products.map(({ node }, index) => {
                     console.log('extension', node)
                     return (
