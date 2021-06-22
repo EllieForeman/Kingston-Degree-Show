@@ -131,9 +131,12 @@ class ProductPage extends React.Component {
                                     <div className="text">
                                         <p>{node.artist} <FaInstagram /></p>
                                         <div className="socialIcons">
-                                            <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram aria-label="instagram link" className=""/></a>
+                                            <FaInstagram />
+                                            <CgProfile />
+                                            <HiOutlineMailOpen />
+                                            {/* <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram aria-label="instagram link" className=""/></a>
                                             <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile aria-label="website link" className="" /></a>
-                                            <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen aria-label="email link" className="" /></a>
+                                            <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen aria-label="email link" className="" /></a> */}
                                         </div>
                                     </div>
                                 </div>
