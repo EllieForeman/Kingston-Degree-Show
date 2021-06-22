@@ -13,6 +13,7 @@
         "artist": "Ellie Foreman",
         "email": "belle@gmail.com",
         "website": "www.facebook.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test2.jpg",
         "alt": "example alt text",
         "extension": "jpg",
@@ -21,6 +22,7 @@
     {
         "artist": "Eira Foreman",
         "email": "belle@gmail.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test3.jpg",
         "alt": "example alt text",
         "extension": "jpg",
@@ -44,6 +46,7 @@
     {
         "artist": "Eira Foreman",
         "email": "belle@gmail.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test6.jpg",
         "alt": "example alt text",
         "extension": "jpg",
@@ -68,6 +71,7 @@
     {
         "artist": "Eira Foreman",
         "email": "belle@gmail.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test9.jpg",
         "alt": "example alt text",
         "extension": "jpg",
@@ -92,6 +96,7 @@
     {
         "artist": "Eira Foreman",
         "email": "belle@gmail.com",
+        "instagram": "https://www.instagram.com/belleforeman/",
         "profileImage": "../images/profile-photos/test13.jpg",
         "alt": "example alt text",
         "extension": "jpg",

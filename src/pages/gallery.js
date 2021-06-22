@@ -4,12 +4,14 @@ import Layout from '../components/layout'
 import get from 'lodash/get'
 import "./gallery.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../components/header.css'
 import gifExample from '../images/profile-photos/testgif1.gif'
+import { FaInstagram } from 'react-icons/fa';
+import { CgProfile } from 'react-icons/cg';
+import { HiOutlineMailOpen } from 'react-icons/hi';
+
 
 
 class ProductPage extends React.Component {
@@ -128,9 +130,9 @@ class ProductPage extends React.Component {
                                     <div className="text">
                                         <p>{node.artist}</p>
                                         <div className="socialIcons">
-                                            {node.instagram && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="instagram link" className="socialIcon" icon={faInstagram} /></a>}
-                                            {node.website && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="website link" className="socialIcon" icon={faUserAstronaut} /></a>}
-                                            {node.email && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon aria-label="email link" className="socialIcon" icon={faEnvelope} /></a>}
+                                            {node.instagram && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram aria-label="instagram link" className="socialIcon"/></a>}
+                                            {node.website && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile aria-label="website link" className="socialIcon" /></a>}
+                                            {node.email && <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen aria-label="email link" className="socialIcon" /></a>}
                                         </div>
                                     </div>
                                 </div>
