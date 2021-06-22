@@ -117,7 +117,7 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-            <h3> Lets go for a <FaInstagram />? </h3>
+            <h3> Lets go for next <FaInstagram />? </h3>
                 {products.map(({ node }, index) => {
                     console.log('extension', node)
                     return (
@@ -129,7 +129,7 @@ class ProductPage extends React.Component {
                                 }
                                 <div className="overlay">
                                     <div className="text">
-                                        <p>{node.artist}</p>
+                                        <p>{node.artist} <FaInstagram /></p>
                                         <div className="socialIcons">
                                             <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram aria-label="instagram link" className=""/></a>
                                             <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile aria-label="website link" className="" /></a>
