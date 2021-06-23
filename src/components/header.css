@@ -1,7 +1,7 @@
 
 .header {
     position: fixed;
-    width: 225px;
+    width: 200px;
     left: 0;
     margin-left: 15px;
 }
@@ -20,7 +20,7 @@
 }
 
 .TopNav {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .navLinkSection {
@@ -36,8 +36,7 @@ button {
     text-decoration: none;
     margin: 10px;
     padding-bottom: 1px;
-    border-bottom-style: solid;
-    border-bottom-width: 3.1px;
+    color: palevioletred;
     width: fit-content;
 }
 
@@ -49,6 +48,7 @@ ul {
 li{
     cursor: pointer;
     font-family: Abril, serif;
+    margin-bottom: 5px
 }
 
 /* li:second-child {
@@ -58,7 +58,7 @@ li{
 .tagFilter {
     /* font-style: italic; */
     margin-bottom: 2px;
-    font-family: Abril, serif;
+    font-family: 'Apercu';
     font-weight: 200;
     font-size: 16px;
 }

@@ -1,3 +1,7 @@
+.catalogue {
+	border-bottom: 1px dashed;
+	width: 80%
+}
 
 .outerDiv {
 	display: flex;
@@ -29,10 +33,22 @@
 .img1-wrap {
 	position: relative;
 	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+.artistName {
+	color:white;
 }
 
 .image {
-	width: 100%;
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.img1-wrap:hover .image {
+	transform: scale(1.2);
 }
 
 .overlay {
@@ -41,12 +57,12 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	/* background-color: rgba(238,206,23, 0.8); */
+	background-color: rgba(	22, 112, 52, 0.8);
 	overflow: hidden;
     transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
     -webkit-transition: opacity 2s ease-in-out;
-	backdrop-filter: blur(9px);
+	/* backdrop-filter: blur(9px); */
 }
 
 .img1-wrap:hover .overlay {
@@ -75,11 +91,11 @@
 }
 
 a {
-	color: black;
+	color: white;
 }
 
 a:hover {
-	color: #F9F3eF;
+	color: #D6CA36;
 }
 
 .socialIcons {
