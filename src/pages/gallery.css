@@ -65,6 +65,7 @@
     transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
     -webkit-transition: opacity 2s ease-in-out;
+	max-width: 495px;;
 	/* backdrop-filter: blur(9px); */
 }
 
