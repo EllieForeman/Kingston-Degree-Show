@@ -6,11 +6,11 @@
     font-family: Apercu;
     font-size: 20px;
     line-height: 32px;
+    max-width: 80%;
 }
 
 .aboutOuterDiv {
-    max-width: 70%;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 50px;
 }
 

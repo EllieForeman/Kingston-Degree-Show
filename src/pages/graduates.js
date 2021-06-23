@@ -33,7 +33,7 @@ class GraduatesPage extends React.Component {
 
         return (
             <Layout>
-                <div>
+                <div className="flex">
                     <header className="header headerDesktop">
                         <Link to="/" className="logoImage">
                             <StaticImage src="../images/logoTwo.png"

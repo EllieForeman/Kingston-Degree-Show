@@ -29,3 +29,47 @@
     font-family: Abril;
     font-size: 30px;
 }
+
+/* mobile */
+@media only screen and (max-width: 700px) {
+    .flexEven {
+        flex-wrap: wrap;
+        text-align: center;
+        /* max-width: 500px; */
+    }
+    .bottom {
+        margin-top: 0px !important;
+    }
+    .yearTitle {
+        margin-top: 20px;
+    }
+    .graduateYearColumn {
+        margin-right: 0px;
+        width: 100%;
+    }
+    .title {
+        margin-top: 1.45rem;
+        text-align: center;
+    }
+}
+
+/* ipad */
+@media only screen and (min-width: 700px) and (max-width: 1280px) {
+    .flexEven {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: flex-end;
+      }
+      .flexEven>* {
+          flex: 0 0 240px;
+      }
+      .yearTitle {
+        margin-top: 20px;
+    }
+}
+
+
+/* desktop */
+
