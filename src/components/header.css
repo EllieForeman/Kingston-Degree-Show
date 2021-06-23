@@ -1,7 +1,7 @@
 
 .header {
     position: fixed;
-    width: 200px;
+    width: 230px;
     left: 0;
     margin-left: 15px;
 }
@@ -57,9 +57,10 @@ li{
 
 .tagFilter {
     /* font-style: italic; */
-    margin-bottom: 6px;
+    margin-bottom: 2px;
     font-family: Abril, serif;
     font-weight: 200;
+    font-size: 16px;
 }
 
 li button:hover {
@@ -85,6 +86,10 @@ button {
     color: #167034;
 }
 
+.scrollableList {
+    overflow: scroll;
+    height: 800px;
+}
 
 /* FOR MOBILE */
 

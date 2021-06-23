@@ -44,7 +44,8 @@ const ArtDirectedBackground = ({ className }) => {
       fluid={sources}
     >
       <StyledInnerWrapper>
-        <Link className="enterButton" to="/gallery/">enter</Link> <br />      </StyledInnerWrapper>
+        <Link className="enterButton" to="/gallery/">enter</Link> <br />
+        </StyledInnerWrapper>
     </BackgroundImage>
   )
 }
