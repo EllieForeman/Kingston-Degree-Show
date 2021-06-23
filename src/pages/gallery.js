@@ -46,7 +46,20 @@ class ProductPage extends React.Component {
         navigator.clipboard.writeText(email);
     }
 
+    componentDidMount = () => {
+        window.addEventListener("load", this.refresh());
+    }
 
+    refresh() {
+        if (this.state.tag === "all") {
+            this.setState({products: get(this, 'props.data.allDataJson.edges')})
+        } else {
+            let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
+                return obj.node.tag.includes(this.state.tag)
+            })
+            this.setState({products: taggedArray})
+        };
+    }
 
     render() {
         const products = this.state.products
