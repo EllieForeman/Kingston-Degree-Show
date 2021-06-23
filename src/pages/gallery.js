@@ -19,7 +19,7 @@ class ProductPage extends React.Component {
         this.state = {
             tag: "all",
             showEmailCopy: false,
-            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5),
+            products: get(this, 'props.data.allDataJson.edges')
         }
         this.handleClick = this.filter.bind(this);
         this.handleClick = this.showEmailCopy.bind(this);
@@ -28,12 +28,12 @@ class ProductPage extends React.Component {
 
     filter(tag) {
         if (tag === "all") {
-            this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
+            this.setState({products: get(this, 'props.data.allDataJson.edges')})
         } else {
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
                 return obj.node.tag.includes(tag)
             })
-            this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
+            this.setState({products: taggedArray})
         };
         this.setState({ tag: tag });
     }      
@@ -139,7 +139,7 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-                {products.map(({ node }, index) => {
+                {products.sort(() => Math.random() - 0.5).map(({ node }, index) => {
                     let email = `mailto:${node.email}`;
                     console.log('email', email)
                     console.log('show email', this.state.showEmailCopy)
