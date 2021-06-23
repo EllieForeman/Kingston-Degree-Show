@@ -8,6 +8,13 @@
 	display: flex;
 }
 
+.flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .flexAround {
 	display: flex;
 	justify-content: space-around;

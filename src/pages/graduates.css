@@ -13,11 +13,14 @@
 .graduateName {
     margin-bottom: 5px;
     font-family: Apercu;
-
+    font-size: 20px;
 }
 
 .graduateEmail {
     color: #1261A4;
+    font-family: Apercu;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .yearTitle {

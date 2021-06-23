@@ -74,7 +74,7 @@ class GraduatesPage extends React.Component {
                                         return (
                                             <div>
                                                 <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail aboutBody">{person.email}</h3>
+                                                <h3 className="graduateEmail">{person.email}</h3>
                                             </div>
                                         )
                                     })}
@@ -85,7 +85,7 @@ class GraduatesPage extends React.Component {
                                         return (
                                             <div>
                                                 <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail aboutBody">{person.email}</h3>
+                                                <h3 className="graduateEmail">{person.email}</h3>
                                             </div>
                                         )
                                     })}

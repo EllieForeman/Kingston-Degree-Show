@@ -1,7 +1,7 @@
 
 .header {
     position: fixed;
-    width: 230px;
+    width: 225px;
     left: 0;
     margin-left: 15px;
 }
@@ -67,13 +67,39 @@ li button:hover {
     color: palevioletred;
 }
 
-.tagFilter:hover .icon {
+.twist {
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+}
+
+.tagFilter:hover .twist {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(410deg);
+    -webkit-transform: rotate(410deg);
+}
+
+.twistTwo {
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+}
+
+.tagFilter:hover .twistTwo {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(480deg);
+    -webkit-transform: rotate(480deg);
+}
+
+.tagFilter:hover .noTwist {
     overflow: hidden;
     transition-duration: 0.8s;
     transition-property: transform;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
- }
+}
 
 .tagActive {
     color: palevioletred;

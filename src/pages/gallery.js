@@ -45,36 +45,38 @@ class ProductPage extends React.Component {
             <div className="flex">
             {/* DESKTOP HEADER */}
             <header className="header headerDesktop">
-                <Link to="/" className="logoImage">
-                    <StaticImage src="../images/logoTwo.png"
-                    alt="Logo"
-                    placeholder="tracedSVG"
-                    layout="fixed"
-                    width={200}
-                    height={200}
-                    />
-                </Link>
+                <div className="flexCenter">
+                    <Link to="/" className="logoImage">
+                        <StaticImage src="../images/logoTwo.png"
+                        alt="Logo"
+                        placeholder="tracedSVG"
+                        layout="fixed"
+                        width={140}
+                        height={140}
+                        />
+                    </Link>
+                </div>
                 <div class="navLinkSection">
                     <ul class="scrollableList">
                         <li><Link to="/about" className="menuLink">about</Link></li>
                         <li><Link to="/graduates" className="menuLink">graduates</Link></li>
                         <li className="TopNav"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
-                        <li className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("all")}><StaticImage className="icon" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>all</button></li>
-                        <li className={this.state.tag === "moving image" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("GamesDesign")}><StaticImage className="icon" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>Games Design</button></li>
-                        <li className={this.state.tag === "illustration" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("DigitalArt")}><StaticImage className="icon" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Digital Art</button></li>
-                        <li className={this.state.tag === "animation" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Printmaking")}><StaticImage className="icon" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Printmaking</button></li>
-                        <li className={this.state.tag === "children's books" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("2D")}><StaticImage className="icon" src="../images/shapes/childrens-book.png" width={30} alt="Logo" placeholder="tracedSVG"/>2D Animation</button></li>
-                        <li className={this.state.tag === "documentary" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("3D")}><StaticImage className="icon" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>3D Animation</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("MovingImage")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Moving Image</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("StopMotion")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Stop Motion</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ChildrenBooks")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Children's Boooks</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ComicsGN")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Comics/Graphic novels</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Publication")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Publication</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Installation")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Installation</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Objects")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Objects</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Drawings")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Drawings</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Textiles")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Textiles</button></li>
-                        <li className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Workshops")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Workshops/ Educational</button></li>
+                        <li className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>all</button></li>
+                        <li className={this.state.tag === "GamesDesign" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("GamesDesign")}><StaticImage className="icon noTwist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>Games Design</button></li>
+                        <li className={this.state.tag === "DigitalArt" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("DigitalArt")}><StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Digital Art</button></li>
+                        <li className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Printmaking</button></li>
+                        <li className={this.state.tag === "2D" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("2D")}><StaticImage className="icon noTwist" src="../images/shapes/childrens-book.png" width={30} alt="Logo" placeholder="tracedSVG"/>2D Animation</button></li>
+                        <li className={this.state.tag === "3D" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("3D")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>3D Animation</button></li>
+                        <li className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Moving Image</button></li>
+                        <li className={this.state.tag === "StopMotion" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("StopMotion")}><StaticImage className="icon twistTwo" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>Stop Motion</button></li>
+                        <li className={this.state.tag === "ChildrenBooks" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ChildrenBooks")}><StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>Children's Boooks</button></li>
+                        <li className={this.state.tag === "ComicsGN" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ComicsGN")}><StaticImage className="icon twist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Comics/Graphic novels</button></li>
+                        <li className={this.state.tag === "Publication" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Publication")}><StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Publication</button></li>
+                        <li className={this.state.tag === "Installation" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Installation")}><StaticImage className="icon twist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Installation</button></li>
+                        <li className={this.state.tag === "Objects" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Objects")}><StaticImage className="icon twist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>Objects</button></li>
+                        <li className={this.state.tag === "Drawings" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Drawings")}><StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>Drawings</button></li>
+                        <li className={this.state.tag === "Textiles" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Textiles")}><StaticImage className="icon twist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>Textiles</button></li>
+                        <li className={this.state.tag === "Workshops" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Workshops")}><StaticImage className="icon twist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>Workshops/ Educational</button></li>
                     </ul>
                 </div>
             </header>
