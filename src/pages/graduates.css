@@ -1,12 +1,14 @@
 
 .graduateYearColumn {
     margin-right: 50px;
+    /* border: 1px dashed blue;
+    height: 50px; */
 }
 
 .flexEven {
     display: flex;
     justify-content: space-between;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin-top: 30px;
 }
 

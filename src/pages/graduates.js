@@ -24,12 +24,16 @@ class GraduatesPage extends React.Component {
                 twentyTwentyOne.push(node)
             }
         })
-        console.log('twentyTwenty', twentyTwenty)
-        console.log('twentyTwentyOne', twentyTwentyOne)
+        const halfTwentyTwenty = Math.ceil(twentyTwenty.length / 2);    
+        const firstHalfTwentyTwenty = twentyTwenty.splice(0, halfTwentyTwenty); 
+        const secondHalfTwentyTwenty = twentyTwenty.splice(-halfTwentyTwenty); 
+        const halfTwentyTwentyOne = Math.ceil(twentyTwentyOne.length / 2);    
+        const firstHalfTwentyTwentyOne = twentyTwentyOne.splice(0, halfTwentyTwentyOne); 
+        const secondHalfTwentyTwentyOne = twentyTwentyOne.splice(-halfTwentyTwentyOne); 
 
         return (
             <Layout>
-                <div className="flex">
+                <div>
                     <header className="header headerDesktop">
                         <Link to="/" className="logoImage">
                             <StaticImage src="../images/logoTwo.png"
@@ -40,7 +44,7 @@ class GraduatesPage extends React.Component {
                             height={200}
                             />
                         </Link>
-                        <div className="navLinkSection">
+                        <div class="navLinkSection">
                             <ul>
                                 <li><Link to="/about" className="menuLink">about</Link></li>
                                 <li><Link to="#" className="menuLink active">graduates</Link></li>
@@ -68,29 +72,45 @@ class GraduatesPage extends React.Component {
                         <div className="flexEven">
                             <div className="graduateYearColumn">
                                 <h1 className="yearTitle">2020.</h1>
-                                    {twentyTwenty.map(person => {
-                                        return (
-                                            <div>
-                                                {/* <div className="flexCenterReverse">
-                                                    <h3 className="graduateEmail">{person.artist}</h3> 
-                                                    <StaticImage className="icon" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
-                                                </div> */}
-                                                <h3 className="graduateName">{person.artist}</h3> 
-                                                <h3 className="graduateEmail">{person.email}</h3>    
-                                            </div>
-                                        )
-                                    })}
+                                {firstHalfTwentyTwenty.map(person => {
+                                    return (
+                                        <div>
+                                            <h3 className="graduateName">{person.artist}</h3> 
+                                            <h3 className="graduateEmail">{person.email}</h3>    
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <div className="graduateYearColumn bottom">
+                                {secondHalfTwentyTwenty.map(person => {
+                                    return (
+                                        <div>
+                                            <h3 className="graduateName">{person.artist}</h3> 
+                                            <h3 className="graduateEmail">{person.email}</h3>    
+                                        </div>
+                                    )
+                                })}
                             </div>
                             <div className="graduateYearColumn">
                                 <h1 className="yearTitle">2021.</h1>
-                                    {twentyTwentyOne.map(person => {
-                                        return (
-                                            <div>
-                                                <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail">{person.email}</h3>
-                                            </div>
-                                        )
-                                    })}
+                                {firstHalfTwentyTwentyOne.map(person => {
+                                    return (
+                                        <div>
+                                            <h2 className="graduateName">{person.artist}</h2>
+                                            <h3 className="graduateEmail">{person.email}</h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <div className="graduateYearColumn bottom">
+                                {secondHalfTwentyTwentyOne.map(person => {
+                                    return (
+                                        <div>
+                                            <h2 className="graduateName">{person.artist}</h2>
+                                            <h3 className="graduateEmail">{person.email}</h3>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
