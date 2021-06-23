@@ -18,9 +18,8 @@ class ProductPage extends React.Component {
         super(props);
         this.state = {
             tag: "all",
+            showEmailCopy: false,
             products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5),
-            showEmailCopy: false
-            // products: get(this, 'props.data.allDataJson.edges')
         }
         this.handleClick = this.filter.bind(this);
         this.handleClick = this.showEmailCopy.bind(this);
