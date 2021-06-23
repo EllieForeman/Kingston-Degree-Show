@@ -17,7 +17,7 @@ const AboutPage = () => (
                     height={200}
                     />
                 </Link>
-                <div class="navLinkSection">
+                <div className="navLinkSection">
                     <ul>
                         <li><Link to="#" className="menuLink active">about</Link></li>
                         <li><Link to="/graduates" className="menuLink">graduates</Link></li>

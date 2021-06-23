@@ -18,15 +18,17 @@ class ProductPage extends React.Component {
         super(props);
         this.state = {
             tag: "all",
-            // products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)
-            products: get(this, 'props.data.allDataJson.edges')
+            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)
+            // products: get(this, 'props.data.allDataJson.edges')
         }
         this.handleClick = this.filter.bind(this);
     }
     filter(tag) {
+        console.log('tag selected', tag)
         if (tag === "all") {
             this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
         } else {
+            console.log('tag inside', tag)
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
                 return obj.node.tag.includes(tag)
             })
@@ -55,8 +57,8 @@ class ProductPage extends React.Component {
                         />
                     </Link>
                 </div>
-                <div class="navLinkSection">
-                    <ul class="scrollableList">
+                <div className="navLinkSection">
+                    <ul className="scrollableList">
                         <li><Link to="/about" className="menuLink">about</Link></li>
                         <li><Link to="/graduates" className="menuLink">graduates</Link></li>
                         <li className="TopNav catalogue"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
@@ -94,33 +96,33 @@ class ProductPage extends React.Component {
                     <button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button>
                     <Link to="/about" className="menuLink">about</Link>
                 </div>
-                <div class="mobileFilterContainer">
+                <div className="mobileFilterContainer">
                     <p className="filterBy">Filter by:</p>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}>all</button>
                         <StaticImage className="icon" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "moving image" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("moving image")}>moving image</button>
                         <StaticImage className="icon" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "illustration" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("illustration")}>illustration</button>
                         <StaticImage className="icon" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "animation" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("animation")}>animation</button>
                         <StaticImage className="icon" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "children's books" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("children's books")}>children's books</button>
                         <StaticImage className="icon" src="../images/shapes/childrens-book.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "documentary" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("documentary")}>documentary</button>
                         <StaticImage className="icon" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
-                    <div class="flexCenterReverse">
+                    <div className="flexCenterReverse">
                         <button className={this.state.tag === "etc" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("etc")}>etc</button>
                         <StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
@@ -129,7 +131,6 @@ class ProductPage extends React.Component {
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
                 {products.map(({ node }, index) => {
-                    console.log('extension', node)
                     return (
                         <div key={index} className={`image${index} flex-container ${node.tag}`}>
                             <div className="img1-wrap">

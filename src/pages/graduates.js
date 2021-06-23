@@ -10,8 +10,6 @@ import '../pages/graduates.css'
 import '../pages/gallery.css'
 import '../pages/about.css'
 
-
-
 class GraduatesPage extends React.Component {
 
     render() {
@@ -42,7 +40,7 @@ class GraduatesPage extends React.Component {
                             height={200}
                             />
                         </Link>
-                        <div class="navLinkSection">
+                        <div className="navLinkSection">
                             <ul>
                                 <li><Link to="/about" className="menuLink">about</Link></li>
                                 <li><Link to="#" className="menuLink active">graduates</Link></li>
@@ -73,8 +71,12 @@ class GraduatesPage extends React.Component {
                                     {twentyTwenty.map(person => {
                                         return (
                                             <div>
-                                                <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail">{person.email}</h3>
+                                                {/* <div className="flexCenterReverse">
+                                                    <h3 className="graduateEmail">{person.artist}</h3> 
+                                                    <StaticImage className="icon" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                                                </div> */}
+                                                <h3 className="graduateName">{person.artist}</h3> 
+                                                <h3 className="graduateEmail">{person.email}</h3>    
                                             </div>
                                         )
                                     })}
