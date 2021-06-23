@@ -24,11 +24,9 @@ class ProductPage extends React.Component {
         this.handleClick = this.filter.bind(this);
     }
     filter(tag) {
-        console.log('tag selected', tag)
         if (tag === "all") {
             this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
         } else {
-            console.log('tag inside', tag)
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
                 return obj.node.tag.includes(tag)
             })

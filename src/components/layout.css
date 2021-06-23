@@ -8,12 +8,18 @@
   src: local('Abril'), url(../styles/fonts/Abril_Display_Bold.otf) format('truetype');
 }
 
+::selection {
+  background-color: palevioletred;
+  color: #fff;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  
 }
 body {
   margin: 0;
