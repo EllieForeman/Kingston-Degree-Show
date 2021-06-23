@@ -51,14 +51,8 @@ class ProductPage extends React.Component {
     }
 
     refresh() {
-        if (this.state.tag === "all") {
-            this.setState({products: get(this, 'props.data.allDataJson.edges')})
-        } else {
-            let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
-                return obj.node.tag.includes(this.state.tag)
-            })
-            this.setState({products: taggedArray})
-        };
+        console.log('refresh', this.state.tag)
+        this.setState({products: get(this, 'props.data.allDataJson.edges')})
     }
 
     render() {
@@ -153,9 +147,6 @@ class ProductPage extends React.Component {
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
                 {products.sort(() => Math.random() - 0.5).map(({ node }, index) => {
-                    let email = `mailto:${node.email}`;
-                    console.log('email', email)
-                    console.log('show email', this.state.showEmailCopy)
                     return (
                         <div key={index} className={`image${index} flex-container ${node.tag}`}>
                             {node.profileImage !== null &&
