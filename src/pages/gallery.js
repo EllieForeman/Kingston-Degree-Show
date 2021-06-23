@@ -46,7 +46,7 @@ class ProductPage extends React.Component {
             {/* DESKTOP HEADER */}
             <header className="header headerDesktop">
                 <Link to="/" className="logoImage">
-                    <StaticImage src="../images/logo-with-text.png"
+                    <StaticImage src="../images/logoTwo.png"
                     alt="Logo"
                     placeholder="tracedSVG"
                     layout="fixed"
@@ -72,7 +72,7 @@ class ProductPage extends React.Component {
             {/* MOBILE HEADER */}
             <header className="headerMobile">
                 <Link to="/" className="logoImageMobile flexCenter">
-                        <StaticImage src="../images/logo-with-text.png"
+                        <StaticImage src="../images/logoTwo.png"
                         alt="Logo"
                         placeholder="tracedSVG"
                         layout="fixed"

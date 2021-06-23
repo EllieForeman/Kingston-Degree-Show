@@ -34,7 +34,7 @@ class GraduatesPage extends React.Component {
                 <div className="flex">
                     <header className="header headerDesktop">
                         <Link to="/" className="logoImage">
-                            <StaticImage src="../images/logo-with-text.png"
+                            <StaticImage src="../images/logoTwo.png"
                             alt="Logo"
                             placeholder="tracedSVG"
                             layout="fixed"
@@ -52,7 +52,7 @@ class GraduatesPage extends React.Component {
                     </header>
                     <header className="headerMobile">
                         <Link to="/" className="logoImageMobile flexCenter">
-                                <StaticImage src="../images/logo-with-text.png"
+                                <StaticImage src="../images/logoTwo.png"
                                 alt="Logo"
                                 placeholder="tracedSVG"
                                 layout="fixed"
