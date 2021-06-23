@@ -22,6 +22,8 @@
 .flexAround {
 	display: flex;
 	justify-content: space-around;
+	width: 150px;
+	height: 33px;
 }
 
 .flex-container {
@@ -39,6 +41,7 @@
 
 .artistName {
 	color:white;
+	text-align: center;
 }
 
 .image {
@@ -120,4 +123,20 @@ a:hover {
     align-items: center;
     justify-content: center;
 	flex-direction: row-reverse
+}
+
+.emailCopy {
+	font-size: 15px;
+	color: white;
+	text-align: right;
+	font-family: Apercu;
+	opacity: 0;
+}
+
+.display {
+	opacity: 1;
+}
+
+.iconP {
+	font-size: 23px;
 }

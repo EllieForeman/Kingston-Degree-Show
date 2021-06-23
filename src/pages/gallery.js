@@ -18,11 +18,15 @@ class ProductPage extends React.Component {
         super(props);
         this.state = {
             tag: "all",
-            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)
+            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5),
+            showEmailCopy: false
             // products: get(this, 'props.data.allDataJson.edges')
         }
         this.handleClick = this.filter.bind(this);
+        this.handleClick = this.showEmailCopy.bind(this);
+
     }
+
     filter(tag) {
         if (tag === "all") {
             this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
@@ -33,7 +37,15 @@ class ProductPage extends React.Component {
             this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
         };
         this.setState({ tag: tag });
-    }        
+    }      
+
+    showEmailCopy(email) {
+        this.setState({ showEmailCopy: true });
+        setTimeout(() => {
+            this.setState({ showEmailCopy: false });
+        }, 1000);
+        navigator.clipboard.writeText(email);
+    }
 
 
 
@@ -129,26 +141,33 @@ class ProductPage extends React.Component {
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
                 {products.map(({ node }, index) => {
+                    let email = `mailto:${node.email}`;
+                    console.log('email', email)
+                    console.log('show email', this.state.showEmailCopy)
                     return (
                         <div key={index} className={`image${index} flex-container ${node.tag}`}>
-                            <div className="img1-wrap">
-                                <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image"/>
-                                {/* {node.extension.includes("gif")
-                                    ? <img src={gifExample} alt="profile image of artist" />
-                                    : <img src={node.profileImage.childImageSharp.fluid.src} alt="profile image of artist" className="image"/>
-                                } */}
-                                <div className="overlay">
-                                    <div className="text">
-                                        <p className="artistName">{node.artist}</p>
-                                        <div className="flexAround">
-                                        <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></p>
-                                        <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>
-                                        <p><a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer"><HiOutlineMailOpen /></a></p>
+                            {node.profileImage !== null &&
+                                <div className="img1-wrap">
+                                    <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image"/>
+                                    {/* {node.extension.includes("gif")
+                                        ? <img src={gifExample} alt="profile image of artist" />
+                                        : <img src={node.profileImage.childImageSharp.fluid.src} alt="profile image of artist" className="image"/>
+                                    } */}
+                                    <div className="overlay">
+                                        <div className="text">
+                                            <p className="artistName">{node.artist}</p>
+                                            <div className="flexAround">
+                                                {node.instagram && <p className="iconP"><a href={node.instagram} target="_blank" rel="noopener noreferrer" width="5px"><FaInstagram /></a></p>}
+                                                {node.website && <p className="iconP"><a href={node.website} target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>}
+                                                {node.email && <p className="iconP">
+                                                    <a onClick={() => this.showEmailCopy(node.email)}><HiOutlineMailOpen /></a></p>}
+                                            </div>
+                                            <p className={this.state.showEmailCopy ? "display emailCopy" : "emailCopy"}>email copied!</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            }
+                        </div>       
                     )
                 })}
             </div>
