@@ -1,0 +1,26 @@
+
+.graduateYearColumn {
+    margin-right: 50px;
+}
+
+.flexEven {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.graduateName {
+    margin-bottom: 5px;
+    font-family: Apercu;
+
+}
+
+.graduateEmail {
+    color: #1261A4;
+}
+
+.yearTitle {
+    font-family: Abril;
+    font-size: 30px;
+}
