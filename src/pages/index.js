@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import splashGif from '../images/profile-photos/testgif3.gif'
+import splashGif from '../images/logo.png'
 import '../pages/index.css'
 
 
