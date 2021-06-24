@@ -222,7 +222,7 @@ export const productsQuery = graphql`
           instagram
           profileImage {
             childImageSharp {
-              fluid(maxWidth: 1000, quality: 100) {
+              fluid(maxWidth: 500, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
