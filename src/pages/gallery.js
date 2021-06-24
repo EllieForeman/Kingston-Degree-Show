@@ -67,7 +67,6 @@ class ProductPage extends React.Component {
 
     render() {
         const products = this.state.products
-        console.log('refresh', this.state.tag)
         return (
         <Layout>
             <div className="flex">
@@ -90,7 +89,7 @@ class ProductPage extends React.Component {
                         <li><Link to="/about" className="menuLink">about</Link></li>
                         <li><Link to="/graduates" className="menuLink">graduates</Link></li>
                         <li className="TopNav catalogue"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
-                        <li><button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>all</button></li>
+                        <li><button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>All</button></li>
                         <li><button className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>Moving Image</button></li>
                         <li><button className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Printmaking</button></li>
                         <li><button className={this.state.tag === "Drawings" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Drawings")}><StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>Drawings</button></li>
@@ -125,7 +124,7 @@ class ProductPage extends React.Component {
                 <div className="mobileFilterContainer">
                     <p className="filterBy">Filter by:</p>
                     <div className="flexCenterReverse">
-                        <button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}>all</button>
+                        <button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}>All</button>
                         <StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
                     </div>
                     <div className="flexCenterReverse">
