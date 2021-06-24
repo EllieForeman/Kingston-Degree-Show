@@ -6,12 +6,10 @@ import "./gallery.css"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../components/header.css'
-// import gifExample from '../images/profile-photos/testgif1.gif'
 import { FaInstagram } from 'react-icons/fa';
 import { CgProfile } from 'react-icons/cg';
 import { HiOutlineMailOpen } from 'react-icons/hi';
-import { node } from 'prop-types'
-import { faBimobject } from '@fortawesome/free-brands-svg-icons'
+
 
 
 
@@ -29,7 +27,7 @@ class ProductPage extends React.Component {
 
     filter(tag) {
         if (tag === "all") {
-            this.setState({products: get(this, 'props.data.allDataJson.edges')})
+            this.setState({products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)})
         }
         else if (tag === "MovingImage") {
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
@@ -38,13 +36,13 @@ class ProductPage extends React.Component {
                     return obj.node  
                 }
             })
-            this.setState({products: taggedArray})
+            this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
         } 
         else {
             let taggedArray = get(this, 'props.data.allDataJson.edges').filter(obj => {
                 return obj.node.tag.includes(tag)
             })
-            this.setState({products: taggedArray})
+            this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
         };
         this.setState({ tag: tag });
     }      
@@ -57,14 +55,14 @@ class ProductPage extends React.Component {
         navigator.clipboard.writeText(email);
     }
 
-    componentDidMount = () => {
-        window.addEventListener("load", this.refresh());
-        console.log('refreshed page')
-    }
+    // componentDidMount = () => {
+    //     window.addEventListener("load", this.refresh());
+    //     console.log('refreshed page')
+    // }
 
-    refresh() {
-        this.setState({products: get(this, 'props.data.allDataJson.edges')})
-    }
+    // refresh() {
+    //     // this.setState({products: get(this, 'props.data.allDataJson.edges')})
+    // }
 
     render() {
         const products = this.state.products
@@ -180,7 +178,7 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-                {products.sort(() => Math.random() - 0.5).map(({ node }, index) => {
+                {products.map(({ node }, index) => {
                     return (
                         <div key={index} id={node.artist} className={ node.profileImage !== null ? `image${index} flex-container ${node.tag}` : `image${index} flex-container ${node.tag} displayNone`}>
                             {node.profileImage !== null &&
