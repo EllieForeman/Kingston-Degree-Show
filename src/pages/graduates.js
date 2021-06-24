@@ -39,7 +39,7 @@ class GraduatesPage extends React.Component {
                         <Link to="/" className="logoImage">
                             <StaticImage src="../images/logoTwo.png"
                             alt="Logo"
-                            placeholder="tracedSVG"
+                            placeholder="blurred"
                             layout="fixed"
                             width={200}
                             height={200}
@@ -58,7 +58,7 @@ class GraduatesPage extends React.Component {
                         <Link to="/" className="logoImageMobile flexCenter">
                                 <StaticImage src="../images/logoTwo.png"
                                 alt="Logo"
-                                placeholder="tracedSVG"
+                                placeholder="blurred"
                                 layout="fixed"
                                 width={120}
                                 height={120}

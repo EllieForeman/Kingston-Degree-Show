@@ -11,7 +11,7 @@ const AboutPage = () => (
                 <Link to="/" className="logoImage">
                     <StaticImage src="../images/logoTwo.png"
                     alt="Logo"
-                    placeholder="tracedSVG"
+                    placeholder="blurred"
                     layout="fixed"
                     width={200}
                     height={200}
@@ -30,7 +30,7 @@ const AboutPage = () => (
                 <Link to="/" className="logoImageMobile flexCenter">
                         <StaticImage src="../images/logoTwo.png"
                         alt="Logo"
-                        placeholder="tracedSVG"
+                        placeholder="blurred"
                         layout="fixed"
                         width={120}
                         height={120}
@@ -47,7 +47,7 @@ const AboutPage = () => (
                 <div className="imageContainer">
                     <StaticImage src="../images/logoAbout.png"
                             alt="Logo"
-                            placeholder="tracedSVG"
+                            placeholder="blurred"
                             layout="fixed"
                             width={200}
                             height={200}

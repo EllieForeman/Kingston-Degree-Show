@@ -89,19 +89,19 @@ class ProductPage extends React.Component {
                         <li><Link to="/about" className="menuLink">about</Link></li>
                         <li><Link to="/graduates" className="menuLink">graduates</Link></li>
                         <li className="TopNav catalogue"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
-                        <li><button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>All</button></li>
-                        <li><button className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>Moving Image</button></li>
-                        <li><button className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Printmaking</button></li>
-                        <li><button className={this.state.tag === "Drawings" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Drawings")}><StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>Drawings</button></li>
-                        <li><button className={this.state.tag === "ChildrenBooks" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ChildrenBooks")}><StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>Children's Books</button></li>
-                        <li><button className={this.state.tag === "ComicsGN" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ComicsGN")}><StaticImage className="icon noTwist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Graphic novels</button></li>
-                        <li><button className={this.state.tag === "Publication" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Publication")}><StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Publication</button></li>
-                        <li><button className={this.state.tag === "Installation" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Installation")}><StaticImage className="icon twist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Installation</button></li>
-                        <li><button className={this.state.tag === "Objects" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Objects")}><StaticImage className="icon twist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>Objects</button></li>
-                        <li><button className={this.state.tag === "Textiles" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Textiles")}><StaticImage className="icon twist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>Textiles</button></li>
-                        <li><button className={this.state.tag === "GamesDesign" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("GamesDesign")}><StaticImage className="icon twistTwo" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Games Design</button></li>
-                        <li><button className={this.state.tag === "DigitalArt" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("DigitalArt")}><StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Digital Art</button></li>
-                        <li><button className={this.state.tag === "Workshops" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Workshops")}><StaticImage className="icon twist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>Educational</button></li>
+                        <li><button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="blurred"/>All</button></li>
+                        <li><button className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="blurred"/>Moving Image</button></li>
+                        <li><button className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="blurred"/>Printmaking</button></li>
+                        <li><button className={this.state.tag === "Drawings" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Drawings")}><StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="blurred"/>Drawings</button></li>
+                        <li><button className={this.state.tag === "ChildrenBooks" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ChildrenBooks")}><StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="blurred"/>Children's Books</button></li>
+                        <li><button className={this.state.tag === "ComicsGN" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ComicsGN")}><StaticImage className="icon noTwist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="blurred"/>Graphic novels</button></li>
+                        <li><button className={this.state.tag === "Publication" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Publication")}><StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="blurred"/>Publication</button></li>
+                        <li><button className={this.state.tag === "Installation" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Installation")}><StaticImage className="icon twist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="blurred"/>Installation</button></li>
+                        <li><button className={this.state.tag === "Objects" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Objects")}><StaticImage className="icon twist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="blurred"/>Objects</button></li>
+                        <li><button className={this.state.tag === "Textiles" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Textiles")}><StaticImage className="icon twist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="blurred"/>Textiles</button></li>
+                        <li><button className={this.state.tag === "GamesDesign" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("GamesDesign")}><StaticImage className="icon twistTwo" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="blurred"/>Games Design</button></li>
+                        <li><button className={this.state.tag === "DigitalArt" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("DigitalArt")}><StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="blurred"/>Digital Art</button></li>
+                        <li><button className={this.state.tag === "Workshops" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Workshops")}><StaticImage className="icon twist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="blurred"/>Educational</button></li>
                     </ul>
                 </div>
             </header>
@@ -110,7 +110,7 @@ class ProductPage extends React.Component {
                 <Link to="/" className="logoImageMobile flexCenter">
                         <StaticImage src="../images/logoTwo.png"
                         alt="Logo"
-                        placeholder="tracedSVG"
+                        placeholder="blurred"
                         layout="fixed"
                         width={120}
                         height={120}
@@ -125,55 +125,55 @@ class ProductPage extends React.Component {
                     <p className="filterBy">Filter by:</p>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}>All</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("MovingImage")}>Moving Image</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Printmaking")}>Printmaking</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Drawings" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Drawings")}>Drawings</button>
-                        <StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "ChildrenBooks" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ChildrenBooks")}>children's books</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "ComicsGN" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("ComicsGN")}>Graphic novels</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Publication" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Publication")}>Publication</button>
-                        <StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Installation" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Installation")}>Installation</button>
-                        <StaticImage className="icon twist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Objects" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Objects")}>Objects</button>
-                        <StaticImage className="icon twist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Textiles" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Textiles")}>Textiles</button>
-                        <StaticImage className="icon twist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "GamesDesign" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("GamesDesign")}>Games Design</button>
-                        <StaticImage className="icon twistTwo" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twistTwo" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "DigitalArt" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("DigitalArt")}>Digital Art</button>
-                        <StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                     <div className="flexCenterReverse">
                         <button className={this.state.tag === "Workshops" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Workshops")}>Educational</button>
-                        <StaticImage className="icon twist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>
+                        <StaticImage className="icon twist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="blurred"/>
                     </div>
                 </div>
             </header>
