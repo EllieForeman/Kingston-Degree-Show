@@ -82,6 +82,7 @@ class ProductPage extends React.Component {
                         layout="fixed"
                         width={200}
                         height={200}
+                        className="logoImage"
                         />
                     </Link>
                 </div>
@@ -94,10 +95,7 @@ class ProductPage extends React.Component {
                         <li className={this.state.tag === "GamesDesign" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("GamesDesign")}><StaticImage className="icon noTwist" src="../images/shapes/moving-image.png" width={30} alt="Logo" placeholder="tracedSVG"/>Games Design</button></li>
                         <li className={this.state.tag === "DigitalArt" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("DigitalArt")}><StaticImage className="icon noTwist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Digital Art</button></li>
                         <li className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="tracedSVG"/>Printmaking</button></li>
-                        {/* <li className={this.state.tag === "2D" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("2D")}><StaticImage className="icon noTwist" src="../images/shapes/childrens-book.png" width={30} alt="Logo" placeholder="tracedSVG"/>2D Animation</button></li>
-                        <li className={this.state.tag === "3D" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("3D")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>3D Animation</button></li> */}
                         <li className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="tracedSVG"/>Moving Image</button></li>
-                        {/* <li className={this.state.tag === "StopMotion" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("StopMotion")}><StaticImage className="icon twistTwo" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="tracedSVG"/>Stop Motion</button></li> */}
                         <li className={this.state.tag === "ChildrenBooks" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ChildrenBooks")}><StaticImage className="icon noTwist" src="../images/shapes/grain-2.png" width={30} alt="Logo" placeholder="tracedSVG"/>Children's Books</button></li>
                         <li className={this.state.tag === "ComicsGN" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("ComicsGN")}><StaticImage className="icon" src="../images/shapes/etc.png" width={30} alt="Logo" placeholder="tracedSVG"/>Graphic novels</button></li>
                         <li className={this.state.tag === "Publication" ? "tagActive tagFilter" : "tagFilter"}><button onClick={() => this.filter("Publication")}><StaticImage className="icon twist" src="../images/shapes/illustration.png" width={30} alt="Logo" placeholder="tracedSVG"/>Publication</button></li>
@@ -158,18 +156,13 @@ class ProductPage extends React.Component {
             </header>
             {/* GALLERY OF IMAGES */}
             <div className="outerDiv">
-                {/* {products.sort(() => Math.random() - 0.5).map(({ node }, index) => { */}
-                {products.map(({ node }, index) => {
+                {products.sort(() => Math.random() - 0.5).map(({ node }, index) => {
                     return (
                         <div key={index} id={node.artist} className={`image${index} flex-container ${node.tag}`}>
                             {console.log('name in json', node.artist)}
                             {node.profileImage !== null &&
                                 <div className="img1-wrap">
                                     <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image"/>
-                                    {/* {node.extension.includes("gif")
-                                        ? <img src={gifExample} alt="profile image of artist" />
-                                        : <img src={node.profileImage.childImageSharp.fluid.src} alt="profile image of artist" className="image"/>
-                                    } */}
                                     <div className="overlay">
                                         <div className="text">
                                             <p className="artistName">{node.artist}</p>
