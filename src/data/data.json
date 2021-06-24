@@ -66,6 +66,16 @@
         "tag": "StopMotion 3D"
     },
     {
+        "artist": "Amy Godfrey",
+        "year": "2021",
+        "email": "amydg1470@aol.co.uk",
+        "website": null,
+        "instagram": "https://www.instagram.com/godfrey.amyy",
+        "profileImage": null,
+        "isGif": null,
+        "tag": ""
+    },
+    {
         "artist": "Anna-Beatrice Claxton",
         "year": "2020",
         "email": "abkasumic2121@icloud.com",
@@ -297,6 +307,17 @@
         "tag": "Drawings Printmaking Textiles"
     },
     {
+        "artist": "Eva Butler",
+        "year": null,
+        "email": "evabutler@outlook.com",
+        "website": "www.evabutlerdraws.com",
+        "instagram": "https://www.instagram.com/evabutlerdraws",
+        "profileImage": "../images/profile-photos/EvaButler.png",
+        "extension": "png",
+        "isGif": "false",
+        "tag": "2D Drawings"
+    },
+    {
         "artist": "Evie Anderson",
         "year": "2021",
         "email": "evieanderson71@gmail.com",
@@ -324,8 +345,8 @@
         "email": "freya.croissant@gmail.com",
         "website": "https://www.freyacroissant.cargo.site",
         "instagram": "https://www.instagram.com/freya.croissant",
-        "profileImage": "../images/profile-photos/FreyaCroissant.jpeg",
-        "extension": "jpeg",
+        "profileImage": "../images/profile-photos/FreyaCroissant.png",
+        "extension": "png",
         "isGif": null,
         "tag": "GamesDesign Objects Textiles Drawings"
     },
