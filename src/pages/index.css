@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.enterButton:hover {
+    color: #eece17
+}
+
 .splashGif {
     /* width: 100%;
     height: auto; */

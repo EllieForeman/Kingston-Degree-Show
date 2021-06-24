@@ -60,10 +60,15 @@ const StyledInnerWrapper = styled.div`
 const StyledArtDirectedBackground = styled(ArtDirectedBackground)`
   width: 100%;
   min-height: 100vh;
+  margin: 0 auto;
   /* You should set a background-size as the default value is "cover"! */
-  background-size: cover;
+  background-size: contain;
   /* So we won't have the default "lightgray" background-color. */
   background-color: transparent;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
+
 
 export default StyledArtDirectedBackground
