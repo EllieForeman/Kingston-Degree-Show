@@ -42,6 +42,7 @@ class GraduatesPage extends React.Component {
                             layout="fixed"
                             width={200}
                             height={200}
+                            className="logoImage"
                             />
                         </Link>
                         <div class="navLinkSection">

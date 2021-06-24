@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Kingston degree show`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Illustration Animation BA Kingston degree show`,
+    description: `Showcase of students graduating in 2020 and 2021 from Kingston School of Art`,
+    author: `Ellie Foreman`,
   },
   plugins: [
     {
@@ -33,7 +33,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logoIcon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

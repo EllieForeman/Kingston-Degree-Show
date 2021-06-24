@@ -15,6 +15,7 @@ const AboutPage = () => (
                     layout="fixed"
                     width={200}
                     height={200}
+                    className="logoImage"
                     />
                 </Link>
                 <div className="navLinkSection">
