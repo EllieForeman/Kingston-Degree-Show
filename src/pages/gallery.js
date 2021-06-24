@@ -59,6 +59,7 @@ class ProductPage extends React.Component {
 
     componentDidMount = () => {
         window.addEventListener("load", this.refresh());
+        console.log('refreshed page')
     }
 
     refresh() {
