@@ -6,16 +6,24 @@
     font-family: Apercu;
     font-size: 20px;
     line-height: 32px;
-    max-width: 80%;
 }
 
 .aboutOuterDiv {
     margin-left: 5%;
     margin-top: 50px;
+    max-width: 70%;
 }
 
 .bottom {
     margin-top: 58px;
+}
+
+.aboutImage {
+    margin: 0 auto;
+}
+
+.imageContainer {
+    margin: 45px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,6 +41,9 @@
         font-size: 18px;
         line-height: 32px;
         max-width: 100%;
+    }
+    .imageContainer {
+        margin: 20px 0 20px 0;
     }
 }
 
