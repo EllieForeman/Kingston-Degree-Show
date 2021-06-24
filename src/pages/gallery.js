@@ -184,7 +184,7 @@ class ProductPage extends React.Component {
                         <div key={index} id={node.artist} className={ node.profileImage !== null ? `image${index} flex-container ${node.tag}` : `image${index} flex-container ${node.tag} displayNone`}>
                             {node.profileImage !== null &&
                                 <div className="img1-wrap">
-                                    <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image" loading="eager"/>
+                                    <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image"/>
                                     <div className="overlay">
                                         <div className="text">
                                             <p className="artistName">{node.artist}</p>
