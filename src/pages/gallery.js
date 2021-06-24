@@ -184,7 +184,7 @@ class ProductPage extends React.Component {
                         <div key={index} id={node.artist} className={ node.profileImage !== null ? `image${index} flex-container ${node.tag}` : `image${index} flex-container ${node.tag} displayNone`}>
                             {node.profileImage !== null &&
                                 <div className="img1-wrap">
-                                    <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image"/>
+                                    <img src={node.profileImage.childImageSharp.fluid.src} alt="profile of artist" className="image" loading="eager"/>
                                     <div className="overlay">
                                         <div className="text">
                                             <p className="artistName">{node.artist}</p>
@@ -192,7 +192,7 @@ class ProductPage extends React.Component {
                                                 {node.instagram && <p className="iconP"><a href={node.instagram} target="_blank" rel="noopener noreferrer" width="5px"><FaInstagram /></a></p>}
                                                 {node.website && <p className="iconP"><a href={node.website} target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>}
                                                 {node.email && <p className="iconP">
-                                                    <a onClick={() => this.showEmailCopy(node.email)}><HiOutlineMailOpen /></a></p>}
+                                                <a onClick={() => this.showEmailCopy(node.email)}><HiOutlineMailOpen /></a></p>}
                                             </div>
                                             <p className={this.state.showEmailCopy ? "display emailCopy" : "emailCopy"}>email copied!</p>
                                         </div>

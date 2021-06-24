@@ -144,6 +144,12 @@ a:hover {
 	cursor: pointer;
 }
 
+.isDisabled {
+	color: grey;
+	cursor: not-allowed;
+	opacity: 0.5;
+	text-decoration: none;
+}
 
 /* mobile */
 @media only screen and (max-width: 800px) {
