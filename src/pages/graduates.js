@@ -58,13 +58,14 @@ class GraduatesPage extends React.Component {
                                 alt="Logo"
                                 placeholder="tracedSVG"
                                 layout="fixed"
-                                width={150}
-                                height={150}
+                                width={120}
+                                height={120}
                                 />
                         </Link>
                         <div className="flexCenter paddingTop">
-                            <Link to="/gallery" className="menuLink">catalogue</Link>
-                            <Link to="#" className="menuLink active">about</Link>
+                        <Link to="/about" className="menuLink">about</Link>
+                        <Link to="#" className="menuLink active">graduates</Link>
+                        <Link to="/gallery" className="menuLink">catalogue</Link>
                         </div>
                     </header>
                     <div className="aboutOuterDiv">

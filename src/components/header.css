@@ -19,6 +19,10 @@
     letter-spacing: 0.5px;
 }
 
+.buttonmenuLink {
+    margin: 10px;
+}
+
 .menuLink:hover {
     color: palevioletred;
 }
@@ -107,7 +111,6 @@ li button:hover {
 
 .tagActive {
     color: palevioletred;
-    
 }
 
 button {
@@ -162,7 +165,23 @@ button {
         color: palevioletred;
         margin-left: 0;
     }
-    .tagFilter:hover ~ .icon {
+    .tagFilter:hover ~ .twist {
+        overflow: hidden;
+        transition-duration: 0.8s;
+        transition-property: transform;
+        transform: rotate(410deg);
+        -webkit-transform: rotate(410deg);
+    }
+    
+    .tagFilter:hover ~ .twistTwo {
+        overflow: hidden;
+        transition-duration: 0.8s;
+        transition-property: transform;
+        transform: rotate(480deg);
+        -webkit-transform: rotate(480deg);
+    }
+    
+    .tagFilter:hover ~ .noTwist {
         overflow: hidden;
         transition-duration: 0.8s;
         transition-property: transform;
