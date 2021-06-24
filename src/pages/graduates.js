@@ -23,6 +23,7 @@ class GraduatesPage extends React.Component {
             } else {
                 twentyTwentyOne.push(node)
             }
+            return node.year
         })
         const halfTwentyTwenty = Math.ceil(twentyTwenty.length / 2);    
         const firstHalfTwentyTwenty = twentyTwenty.splice(0, halfTwentyTwenty); 

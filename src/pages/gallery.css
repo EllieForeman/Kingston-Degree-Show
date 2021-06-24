@@ -151,10 +151,19 @@ a:hover {
 	text-decoration: none;
 }
 
+.white {
+	color: white;
+	cursor: pointer;
+}
+
+.white:hover {
+	color: palevioletred;
+}
 /* mobile */
 @media only screen and (max-width: 800px) {
 	.outerDiv {
 		display: block;
+
 	}
 }
 

@@ -35,6 +35,7 @@ class ProductPage extends React.Component {
                 if (results) {
                     return obj.node  
                 }
+                return null
             })
             this.setState({products: taggedArray.sort(() => Math.random() - 0.5)})
         } 
@@ -188,10 +189,10 @@ class ProductPage extends React.Component {
                                         <div className="text">
                                             <p className="artistName">{node.artist}</p>
                                             <div className="flexAround">
-                                                {node.instagram && <p className="iconP"><a href={node.instagram} target="_blank" rel="noopener noreferrer" width="5px"><FaInstagram /></a></p>}
-                                                {node.website && <p className="iconP"><a href={node.website} target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>}
+                                                {node.instagram && <p className="iconP"><a href={node.instagram} role="button" aria-label="instagram link" target="_blank" rel="noopener noreferrer" width="5px"><FaInstagram /></a></p>}
+                                                {node.website && <p className="iconP"><a href={node.website} role="button" aria-label="website link" target="_blank" rel="noopener noreferrer"><CgProfile /></a></p>}
                                                 {node.email && <p className="iconP">
-                                                <a onClick={() => this.showEmailCopy(node.email)}><HiOutlineMailOpen /></a></p>}
+                                                <button className="white" aria-label="email link" onClick={() => this.showEmailCopy(node.email)}><HiOutlineMailOpen /></button></p>}
                                             </div>
                                             <p className={this.state.showEmailCopy ? "display emailCopy" : "emailCopy"}>email copied!</p>
                                         </div>
