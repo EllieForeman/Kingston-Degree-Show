@@ -48,9 +48,9 @@ class GraduatesPage extends React.Component {
                         </Link>
                         <div class="navLinkSection">
                             <ul>
-                                <li><Link to="/about" className="menuLink">about</Link></li>
-                                <li><Link to="#" className="menuLink active">graduates</Link></li>
-                                <li className="TopNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
+                                <li className="mainNav"><Link to="/about" className="menuLink">about</Link></li>
+                                <li className="mainNav"><Link to="#" className="menuLink active">graduates</Link></li>
+                                <li className="TopNav mainNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
                             </ul>
                         </div>
                     </header>

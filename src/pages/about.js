@@ -21,9 +21,9 @@ const AboutPage = () => (
                 </Link>
                 <div className="navLinkSection">
                     <ul>
-                        <li><Link to="#" className="menuLink active">about</Link></li>
-                        <li><Link to="/graduates" className="menuLink">graduates</Link></li>
-                        <li className="TopNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
+                        <li className="mainNav"><Link to="#" className="menuLink active">about</Link></li>
+                        <li className="mainNav"><Link to="/graduates" className="menuLink">graduates</Link></li>
+                        <li className="TopNav mainNav"><Link to="/gallery" className="menuLink">catalogue</Link></li>
                     </ul>
                 </div>
             </header>

@@ -86,9 +86,9 @@ class ProductPage extends React.Component {
                 </div>
                 <div className="navLinkSection">
                     <ul className="scrollableList">
-                        <li><Link to="/about" className="menuLink">about</Link></li>
-                        <li><Link to="/graduates" className="menuLink">graduates</Link></li>
-                        <li className="TopNav catalogue"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
+                        <li className="mainNav"><Link to="/about" className="menuLink">about</Link></li>
+                        <li className="mainNav"><Link to="/graduates" className="menuLink">graduates</Link></li>
+                        <li className="TopNav catalogue mainNav"><button onClick={() => this.filter("all")}><Link to="/gallery" className="menuLink active">catalogue</Link></button></li>
                         <li><button className={this.state.tag === "all" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("all")}><StaticImage className="icon noTwist" src="../images/shapes/grain-3.png" width={30} alt="Logo" placeholder="blurred"/>All</button></li>
                         <li><button className={this.state.tag === "MovingImage" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("MovingImage")}><StaticImage className="icon noTwist" src="../images/shapes/documentary.png" width={30} alt="Logo" placeholder="blurred"/>Moving Image</button></li>
                         <li><button className={this.state.tag === "Printmaking" ? "tagActive tagFilter" : "tagFilter"} onClick={() => this.filter("Printmaking")}><StaticImage className="icon noTwist" src="../images/shapes/animation.png" width={30} alt="Logo" placeholder="blurred"/>Printmaking</button></li>
