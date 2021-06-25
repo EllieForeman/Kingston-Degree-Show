@@ -12,6 +12,10 @@
     margin-top: 60px
 }
 
+.noBottomPad {
+    margin-bottom: 0px;
+}
+
 .aboutOuterDiv {
     margin-left: 5%;
     margin-top: 50px;
@@ -22,12 +26,9 @@
     margin-top: 58px;
 }
 
-.aboutImage {
-    /* margin: 0 auto; */
-}
-
-.imageContainer {
-    /* padding: 45px; */
+.map {
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,6 +49,10 @@
     }
     .imageContainer {
         margin: 20px 0 20px 0;
+    }
+    .map {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 

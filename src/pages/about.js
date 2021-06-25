@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../pages/about.css'
+import map from "../images/showGuide.jpg"
 
 const AboutPage = () => (
     <Layout>
@@ -44,7 +45,6 @@ const AboutPage = () => (
             </header>
             <div className="aboutOuterDiv">
                 <h1 className="title">We are Reconnecting.</h1>
-
                 <div className="flex topPad">
                     <div className="imageContainer">
                         <StaticImage src="../images/logoAbout.png"
@@ -61,6 +61,9 @@ const AboutPage = () => (
                         <p className="aboutBody">For the first time, two graduate years - graduates of 2020 and 2021 - are holding a show together. This is in the <b>OXO Bargehouse from the 25th to the 27th of June 2021.</b> This website is a document of the show, and the participating graduates, please feel free to contact us!</p>
                     </div>
                 </div>
+
+                <h2 className="title topPad noBottomPad">Map of show</h2>
+                <img src={map} alt="map of event" className="map" />
             </div>
         </div>
     </Layout>
