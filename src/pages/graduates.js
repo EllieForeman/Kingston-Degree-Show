@@ -41,8 +41,8 @@ class GraduatesPage extends React.Component {
                             alt="Logo"
                             placeholder="blurred"
                             layout="fixed"
-                            width={200}
-                            height={200}
+                            width={160}
+                            height={160}
                             className="logoImage"
                             />
                         </Link>

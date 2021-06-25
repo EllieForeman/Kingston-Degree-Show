@@ -1,5 +1,5 @@
 .title {
-    font-family: Apercu;
+    font-family: Abril;
 }
 
 .aboutBody {
@@ -8,10 +8,14 @@
     line-height: 32px;
 }
 
+.topPad {
+    margin-top: 60px
+}
+
 .aboutOuterDiv {
     margin-left: 5%;
     margin-top: 50px;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .bottom {
@@ -19,11 +23,11 @@
 }
 
 .aboutImage {
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .imageContainer {
-    margin: 45px;
+    /* padding: 45px; */
 }
 
 @media only screen and (max-width: 600px) {
