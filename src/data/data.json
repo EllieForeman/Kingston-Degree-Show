@@ -1185,5 +1185,38 @@
         "extension": "png",
         "isGif": null,
         "tag": "2D Printmaking MovingImage StopMotion"
+    },
+    {
+        "artist": "Evie Wilshaw",
+        "year": "2021",
+        "email": "ewilshaw99@gmail.com",
+        "website": "https://k1814471.wixsite.com/eviewilshaw",
+        "instagram": "https://www.instagram.com/trashbag_gore",
+        "profileImage": "../images/profile-photos/EvieWilshaw.jpg",
+        "extension": "jpg",
+        "isGif": null,
+        "tag": "GamesDesign DigitalArt Printmaking"
+    },
+    {
+        "artist": "Chris Lui",
+        "year": "2021",
+        "email": "chrislui021@gmail.com",
+        "website": " https://youtube.com/user/luipingyi",
+        "instagram": "https://www.instagram.com/im_chris_lui",
+        "profileImage": "../images/profile-photos/ChrisLui.jpg",
+        "extension": "jpg",
+        "isGif": null,
+        "tag": "MovingImage DigitalArt "
+    },
+    {
+        "artist": "Natasha Willson",
+        "year": "2021",
+        "email": "tash.willson@hotmail.co.uk",
+        "website": null,
+        "instagram": "https://www.instagram.com/tash.willson",
+        "profileImage": "../images/profile-photos/NatashaWillson.png",
+        "extension": "png",
+        "isGif": null,
+        "tag": "MovingImage"
     }
 ]
