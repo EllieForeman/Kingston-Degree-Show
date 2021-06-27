@@ -19,7 +19,7 @@ class ProductPage extends React.Component {
         this.state = {
             tag: "all",
             showEmailCopy: false,
-            products: get(this, 'props.data.allDataJson.edges').sort(() => Math.random() - 0.5)
+            products: get(this, 'props.data.allDataJson.edges')
         }
         this.handleClick = this.filter.bind(this);
         this.handleClick = this.showEmailCopy.bind(this);
@@ -56,14 +56,14 @@ class ProductPage extends React.Component {
         navigator.clipboard.writeText(email);
     }
 
-    componentDidMount = () => {
-        window.addEventListener("load", this.refresh());
-        console.log('refreshed page')
-    }
+    // componentDidMount = () => {
+    //     window.addEventListener("load", this.refresh());
+    //     console.log('refreshed page')
+    // }
 
-    refresh() {
-        this.setState({products: get(this, 'props.data.allDataJson.edges')})
-    }
+    // refresh() {
+    //     this.setState({products: get(this, 'props.data.allDataJson.edges')})
+    // }
 
     render() {
         const products = this.state.products
