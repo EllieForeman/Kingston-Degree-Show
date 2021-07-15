@@ -61,6 +61,13 @@ const AboutPage = () => (
                         <p className="aboutBody">For the first time, two graduate years - graduates of 2020 and 2021 - are holding a show together. This is in the <b>OXO Bargehouse from the 25th to the 27th of June 2021.</b> This website is a document of the show, and the participating graduates, please feel free to contact us!</p>
                     </div>
                 </div>
+                <div className="iframeContainer">
+                    <iframe sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox"
+                    allowfullscreen="true"
+                    className="iframeInner"
+                    src="https://e.issuu.com/embed.html?d=reconnecting_flipsnack&u=lucyllorente"> 
+                    </iframe>
+                </div>
 {/* 
                 <h2 className="title topPad noBottomPad">Map of show</h2>
                 <img src={map} alt="map of event" className="map" /> */}

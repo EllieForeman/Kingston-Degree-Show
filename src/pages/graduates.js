@@ -72,10 +72,20 @@ class GraduatesPage extends React.Component {
                     </header>
                     <div className="aboutOuterDiv">
                         <h1 className="title">Graduates</h1>
-                        <div className="flexEven">
-                            <div className="graduateYearColumn">
-                                <h1 className="yearTitle">2020.</h1>
-                                {firstHalfTwentyTwenty.map(person => {
+                    <div className="flexEven">
+                        <div className="graduateYearColumn">
+                            <h1 className="yearTitle">2020.</h1>
+                            {firstHalfTwentyTwenty.map(person => {
+                                return (
+                                    <div>
+                                        <h3 className="graduateName">{person.artist}</h3> 
+                                        <h3 className="graduateEmail">{person.email}</h3>    
+                                    </div>
+                                )
+                            })}
+                            </div>
+                            <div className="graduateYearColumn bottom">
+                                {secondHalfTwentyTwenty.map(person => {
                                     return (
                                         <div>
                                             <h3 className="graduateName">{person.artist}</h3> 
@@ -83,39 +93,29 @@ class GraduatesPage extends React.Component {
                                         </div>
                                     )
                                 })}
-                                </div>
-                                <div className="graduateYearColumn bottom">
-                                    {secondHalfTwentyTwenty.map(person => {
-                                        return (
-                                            <div>
-                                                <h3 className="graduateName">{person.artist}</h3> 
-                                                <h3 className="graduateEmail">{person.email}</h3>    
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                                <div className="graduateYearColumn">
-                                    <h1 className="yearTitle">2021.</h1>
-                                    {firstHalfTwentyTwentyOne.map(person => {
-                                        return (
-                                            <div>
-                                                <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail">{person.email}</h3>
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                                <div className="graduateYearColumn bottom">
-                                    {secondHalfTwentyTwentyOne.map(person => {
-                                        return (
-                                            <div>
-                                                <h2 className="graduateName">{person.artist}</h2>
-                                                <h3 className="graduateEmail">{person.email}</h3>
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                        </div>
+                            </div>
+                            <div className="graduateYearColumn">
+                                <h1 className="yearTitle">2021.</h1>
+                                {firstHalfTwentyTwentyOne.map(person => {
+                                    return (
+                                        <div>
+                                            <h2 className="graduateName">{person.artist}</h2>
+                                            <h3 className="graduateEmail">{person.email}</h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <div className="graduateYearColumn bottom">
+                                {secondHalfTwentyTwentyOne.map(person => {
+                                    return (
+                                        <div>
+                                            <h2 className="graduateName">{person.artist}</h2>
+                                            <h3 className="graduateEmail">{person.email}</h3>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                    </div>
                     </div>
                 </div>
             </Layout>
