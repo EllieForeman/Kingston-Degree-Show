@@ -78,8 +78,8 @@ class ProductPage extends React.Component {
                         alt="Logo"
                         placeholder="blurred"
                         layout="fixed"
-                        width={160}
-                        height={160}
+                        width={140}
+                        height={140}
                         className="logoImage"
                         />
                     </Link>
