@@ -57,8 +57,8 @@ const AboutPage = () => (
                                 />
                     </div>
                     <div>
-                        <p className="aboutBody">With the Covid switch to more digital learning, we have been dealing with dodgy internet and broken connections; we have been communicating with each other in virtual rooms and corridors. While we have been engaged with the digital, we have also been reconnecting to other things: nature, ourselves, our cultures and the rest of the world. </p>
-                        <p className="aboutBody">For the first time, two graduate years - graduates of 2020 and 2021 - are holding a show together. This is in the <b>OXO Bargehouse from the 25th to the 27th of June 2021.</b> This website is a document of the show, and the participating graduates, please feel free to contact us!</p>
+                        <p className="aboutBody">With the Covid switch to more digital learning, we have been dealing with dodgy internet and broken connections; we have been communicating with each other in virtual rooms and corridors. While we have been engaged with the digital, we have also been reconnecting to other things: nature, ourselves, our cultures and the rest of the world.</p>
+                        <p className="aboutBody">Two graduate years - graduates of 2020 and 2021 - came together and held a show. This was in the OXO Bargehouse from the 25th to the 27th of June 2021. This website is a document of the show, and the participating graduates. Below you can see a film of the show and a digitalised version of our publication. Please feel free to contact us!</p>
                     </div>
                 </div>
                 <div className="iframeContainer">
