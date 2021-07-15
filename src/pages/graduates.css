@@ -1,15 +1,9 @@
-
-.graduateYearColumn {
-    margin-right: 50px;
-    /* border: 1px dashed blue;
-    height: 50px; */
-}
-
 .flexEven {
     display: flex;
-    justify-content: space-between;
-    /* max-width: 500px; */
+    /* justify-content: space-between; */
+    flex-direction: column;
     margin-top: 30px;
+    text-align: center;
 }
 
 .graduateName {
@@ -19,10 +13,13 @@
 }
 
 .graduateEmail {
-    /* color: black; */
     font-family: Apercu;
     font-size: 16px;
     line-height: 32px;
+}
+
+.title {
+    text-align: center;
 }
 
 .yearTitle {
@@ -30,43 +27,41 @@
     font-size: 30px;
 }
 
-/* mobile */
-@media only screen and (max-width: 700px) {
+/* mid size */
+@media only screen and (min-width: 768px) {
     .flexEven {
-        flex-wrap: wrap;
-        text-align: center;
-        /* max-width: 500px; */
+        flex-direction: row;
+        text-align: left;
     }
-    .bottom {
-        margin-top: 0px !important;
+    .flex {
+        justify-content: center;
     }
-    .yearTitle {
-        margin-top: 20px;
-    }
-    .graduateYearColumn {
-        margin-right: 0px;
-        width: 100%;
+    .parentContainer {
+        flex: 1;
+        margin: 0 30px 0 30px;
     }
     .title {
-        margin-top: 1.45rem;
-        text-align: center;
+        text-align: left;
+        padding-left: 25px;
     }
 }
 
-/* ipad */
-@media only screen and (min-width: 700px) and (max-width: 1280px) {
+/* larger size */
+@media only screen and (min-width: 1224px) {
     .flexEven {
-        width: 700px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
-        align-items: flex-end;
-      }
-      .flexEven>* {
-          flex: 0 0 240px;
-      }
-      .yearTitle {
-        margin-top: 20px;
+        text-align: left;
     }
-}
-
+    .parentContainer {
+      display: flex;
+    }
+    .childContainer {
+      flex: 1;
+      margin: 0 10px 0 10px;
+    }
+    .childContainer+.childContainer {
+      margin-top: 3.1rem;
+    }
+    .title {
+        text-align: left;
+    }
+  }
