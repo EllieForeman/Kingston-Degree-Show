@@ -3,10 +3,21 @@
 
 }
 
+.gif {
+    width: 100%;
+}
+
+.indexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .enterButton {
     font-family: Abril;
     font-size: 40px;
-    color: white;
+    color: #167034;
     text-decoration: none;
     position: absolute;
     top: 50%;
@@ -16,6 +27,13 @@
     border: none;
     cursor: pointer;
     text-align: center;
+    opacity: 0;
+    padding-top: 40px
+}
+
+.show {
+    opacity: 100%;
+    transition: opacity 1s
 }
 
 .enterButton:hover {
@@ -26,4 +44,19 @@
     /* width: 100%;
     height: auto; */
     background-size:cover
+}
+
+
+/* larger screen */
+@media only screen and (min-width: 500px) {
+    .gif {
+        height: 100vh;
+        width: auto;
+    }
+    .indexContainer {
+        height: 100vh;
+    }
+    .enterButton {
+        color: white;
+    }
 }

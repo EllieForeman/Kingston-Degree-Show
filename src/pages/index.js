@@ -1,74 +1,39 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
 import '../pages/index.css'
+import shapes from '../images/shapes/riso-bouncing-shapes-ani-white-wide-eira.gif'
 
-const ArtDirectedBackground = ({ className }) => {
-  const { mobileImage, desktopImage } = useStaticQuery(
-    graphql`
-      query {
-        mobileImage: file(relativePath: { eq: "logoIcon.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 490, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        desktopImage: file(relativePath: { eq: "logoIcon.png" }) {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    `
-  )
-  // Set up the array of image data and `media` keys.
-  // You can have as many entries as you'd like.
-  const sources = [
-    mobileImage.childImageSharp.fluid,
-    {
-      ...desktopImage.childImageSharp.fluid,
-      media: `(min-width: 491px)`,
-    },
-  ]
+class IndexPage extends React.Component {
 
-  return (
-    <BackgroundImage
-      Tag={`section`}
-      id={`media-test`}
-      className={className}
-      fluid={sources}
-    >
-      <StyledInnerWrapper>
-        <Link className="enterButton" to="/gallery/">enter</Link> <br />
-        </StyledInnerWrapper>
-    </BackgroundImage>
-  )
+    constructor() {
+        super();
+        this.state = {
+            showButton: false,
+        };
+    }
+    
+    showButton() {
+        if (this.state.showButton === false) {
+            setTimeout(() => {
+                this.setState({ showButton: true });
+            }, 1700);
+        }
+    }
+
+    
+    render() {
+        console.log('showing', this.state.showButton)
+        this.showButton()
+        console.log('showing', this.state.showButton)
+        return (
+            <div className="indexContainer">
+                <Link className={this.state.showButton ? "enterButton show" : "enterButton"} to="/gallery/">enter</Link> <br />
+                <img src={shapes} alt="shapes falling" className="gif" />
+            </div>
+        )
+    }
 }
 
-const StyledInnerWrapper = styled.div`
-  /* margin-top: 10%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
 
-const StyledArtDirectedBackground = styled(ArtDirectedBackground)`
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  /* You should set a background-size as the default value is "cover"! */
-  background-size: contain;
-  /* So we won't have the default "lightgray" background-color. */
-  background-color: transparent;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`
-
-
-export default StyledArtDirectedBackground
+export default IndexPage
