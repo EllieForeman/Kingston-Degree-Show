@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../pages/about.css'
-import map from "../images/showGuide.jpg"
+import video from "../images/film.mp4"
 
 const AboutPage = () => (
     <Layout>
@@ -52,7 +52,7 @@ const AboutPage = () => (
                                 placeholder="blurred"
                                 layout="fixed"
                                 // width={150}
-                                height={350}
+                                height={250}
                                 className="aboutImage"
                                 />
                     </div>
@@ -68,9 +68,13 @@ const AboutPage = () => (
                     src="https://e.issuu.com/embed.html?d=reconnecting_flipsnack&u=lucyllorente"> 
                     </iframe>
                 </div>
-{/* 
-                <h2 className="title topPad noBottomPad">Map of show</h2>
-                <img src={map} alt="map of event" className="map" /> */}
+                <div className="videoOuterDiv">
+                    <iframe src="https://player.vimeo.com/video/575424396?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen className="vid" title="Reconnecting Illustration Animation Show Film">
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+
             </div>
         </div>
     </Layout>
