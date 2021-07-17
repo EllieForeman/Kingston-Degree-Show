@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import '../pages/about.css'
-import video from "../images/film.mp4"
 
 const AboutPage = () => (
     <Layout>
